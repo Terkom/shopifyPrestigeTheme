@@ -25,6 +25,7 @@
     {%- assign border_color = settings.background | color_mix: settings.text_color, 85 -%}
 
     --background          : {{settings.background}};
+    --background-gutter   : {{settings.background_gutter}};
     --background-rgb      : {{ settings.background | color_extract: 'red' }}, {{ settings.background | color_extract: 'green' }}, {{ settings.background | color_extract: 'blue' }};
     --light-background    : {{settings.light_background}};
     --light-background-rgb: {{settings.light_background | color_extract: 'red' }}, {{settings.light_background | color_extract: 'green' }}, {{settings.light_background | color_extract: 'blue' }};
