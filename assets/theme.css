@@ -4326,12 +4326,15 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin: 0;
 }
 
-@media screen and (min-width: 641px) {
-  .AnnouncementBar {
-    // CHANGED MOBILE ANNOUNCEMENT BAR TEXT TO DEFAULT SIZE
-    // font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
-  }
-}
+/* LEAVE MOBILE ANNOUNCEMENT BAR TEXT AS DEFAULT SIZE
+ *
+ * @media screen and (min-width: 641px) {
+ *   .AnnouncementBar {
+ *    
+ *     font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
+ *   }
+ * }
+ */
 
 /**
  * ----------------------------------------------------------------------------
