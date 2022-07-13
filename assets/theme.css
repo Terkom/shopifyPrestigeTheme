@@ -7154,6 +7154,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ProductItem__Label {
   display: block;
+  font-color: var(--button-color);
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 9px));
   margin: 4px 0;
   padding: 2px 6px;
