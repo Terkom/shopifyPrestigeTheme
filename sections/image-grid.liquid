@@ -7,8 +7,8 @@
               <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
 
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
-      {{ block.settings.image.max_width }}
-                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: block.settings.image.max_width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+      
+                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: 10 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
                   {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   <img class="Image--lazyLoad"
                     data-src="{{ image_url }}"
