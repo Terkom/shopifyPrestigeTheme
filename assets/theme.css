@@ -4328,7 +4328,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 641px) {
   .AnnouncementBar {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
+    // CHANGED MOBILE ANNOUNCEMENT BAR TEXT TO DEFAULT SIZE
+    // font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
   }
 }
 
