@@ -7,15 +7,6 @@
               <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
 
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200, 335, 670', image: block.settings.image -%}{%- endcapture -%}
-                {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
-                <img class="Image--lazyLoad Image--fadeIn" 
-                  data-src="{{ image_url }}"
-                  data-widths="[{{ supported_sizes }}]" 
-                  data-sizes="auto"
-                  alt="{{ block.settings.image.alt | escape }}"
-                  data-media-id="{{ image.id }}">
-                <span class="Image__Loader"></span> 
       
                 <div class="AspectRatio" style="max-width: {{ block.settings.image.width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
                   {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -26,7 +17,7 @@
                     data-sizes="auto"
                     alt="{{ block.settings.image.alt | escape }}">
                 </div>
-            
+                <span class="Image__Loader"></span>             
                         <noscript>
                           <img class="" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
                         </noscript>
