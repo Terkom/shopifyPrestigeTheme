@@ -9,7 +9,7 @@
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200, 335, 670', image: block.settings.image -%}{%- endcapture -%}
                 {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
-                <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" 
+                <img class="Image--lazyLoad Image--fadeIn" 
                   data-src="{{ image_url }}"
                   data-widths="[{{ supported_sizes }}]" 
                   data-sizes="auto"
