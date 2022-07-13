@@ -57,7 +57,7 @@
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
           {%- if tag contains '__label' -%}
-            <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
+            <span class="ProductItem__Label Heading">{{ tag | split: '__label:' | last }}</span>
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
