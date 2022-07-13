@@ -54,10 +54,10 @@
           {%- endif -%}
       </div>
 
-      {%- if block.settings.button_link != blank -%}
+      {%- if section.settings.button_link != blank -%}
         <div class="Container">
           <div class="SectionFooter">
-            <a href="{{ button_link.url }}" class="Button Button--primary">{{ block.settings.button_text | escape }}</a>
+            <a href="{{ button_link.url }}" class="Button Button--primary">{{ section.settings.button_text | escape }}</a>
           </div>
         </div>
       {%- endif -%}
@@ -119,6 +119,17 @@
       "id": "grid_desktop_items_per_row",
       "label": "Products per row (desktop)",
       "default": 4
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
     }
   ],
   "blocks": [
@@ -130,26 +141,6 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        },
-        {
-          "type": "range",
-          "id": "grid_items_count",
-          "min": 2,
-          "max": 50,
-          "step": 1,
-          "label": "Products to show",
-          "default": 8
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button text",
-          "default": "Shop Now"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button link"
         }
       ]
     }
