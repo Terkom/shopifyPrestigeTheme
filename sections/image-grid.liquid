@@ -8,13 +8,13 @@
 
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
       
-                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: 10 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: block.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
                   {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   <img class="Image--lazyLoad"
                     data-src="{{ image_url }}"
                     data-widths="[{{ supported_sizes }}]"
                     data-sizes="auto"
-                    alt="{{ block.settings.image.alt | escape }}"> {{ block.settings.max_width }}
+                    alt="{{ block.settings.image.alt | escape }}">
                 </div>
                 <span class="Image__Loader"></span>             
                         <noscript>
