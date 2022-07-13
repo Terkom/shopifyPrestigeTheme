@@ -26,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  background: var(--gutter)
 }
 
 [hidden] {
@@ -52,6 +53,7 @@ summary {
 main {
   max-width: 1500px;
   margin: 0 auto;
+  background: var(--background)
 }
 
 audio,
