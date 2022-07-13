@@ -49,6 +49,10 @@ summary {
   display: block;
 }
 
+main {
+  max-width: 1500px;
+}
+
 audio,
 canvas,
 progress,
