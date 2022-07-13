@@ -7147,8 +7147,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ProductItem__LabelList {
   position: absolute;
-  left: 10px;
-  top: 6px;
+  left: -4px;
+  top: 4px;
   text-align: left;
 }
 
@@ -7158,9 +7158,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin: 4px 0;
   padding: 2px 6px;
   background: var(--background);
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  /* max-width: -webkit-max-content;
+   * max-width: -moz-max-content;
+   * max-width: max-content;
+   */
 }
 
 .ProductItem__Label--onSale {
