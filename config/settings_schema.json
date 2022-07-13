@@ -46,12 +46,6 @@
       },
       {
         "type": "color",
-        "id": "background_gutter",
-        "label": "Gutter Background",
-        "default": "#EAEDED"
-      },
-      {
-        "type": "color",
         "id": "light_background",
         "label": "Light background",
         "default": "#ffffff"
