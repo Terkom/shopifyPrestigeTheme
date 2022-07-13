@@ -38,13 +38,15 @@
         "1657735884faeda64e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/reviews-1.png"
+            "image": "shopify:\/\/shop_images\/reviews-1.png",
+            "link": "shopify:\/\/pages\/reviews"
           }
         },
         "47f858c0-0081-4ae0-b558-624646b8b6f5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png"
+            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
+            "link": ""
           }
         }
       },
@@ -53,7 +55,6 @@
         "47f858c0-0081-4ae0-b558-624646b8b6f5"
       ],
       "settings": {
-        "layout_mode": "grid",
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4,
         "button_text": "Shop Now",
