@@ -26,7 +26,6 @@ html {
 
 body {
   margin: 0;
-  background: var(--background-gutter)
 }
 
 [hidden] {
@@ -1084,7 +1083,7 @@ body {
   font-weight: var(--text-font-weight);
   font-style: var(--text-font-style);
   color: var(--text-color);
-  background: var(--background);
+  background: var(--background-gutter);
   line-height: 1.65;
 }
 
