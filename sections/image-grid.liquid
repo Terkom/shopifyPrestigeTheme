@@ -15,17 +15,17 @@
                   data-sizes="auto"
                   alt="{{ block.settings.image.alt | escape }}"
                   data-media-id="{{ image.id }}">
-                
-      
-              
-                {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="Image--lazyLoad"
-                  data-src="{{ image_url }}"
-                  data-expand="-200"
-                  data-widths="[{{ supported_sizes }}]"
-                  data-sizes="auto"
-                  alt="{{ block.settings.image.alt | escape }}">
                 <span class="Image__Loader"></span> 
+      
+                <div class="AspectRatio" style="max-width: {{ block.settings.image.width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+                  {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <img class="Image--lazyLoad"
+                    data-src="{{ image_url }}"
+                    data-expand="-200"
+                    data-widths="[{{ supported_sizes }}]"
+                    data-sizes="auto"
+                    alt="{{ block.settings.image.alt | escape }}">
+                </div>
             
                         <noscript>
                           <img class="" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
