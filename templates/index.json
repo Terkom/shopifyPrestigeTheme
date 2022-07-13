@@ -93,27 +93,6 @@
         "button_background": "#ffffff"
       }
     },
-    "165774939245ee212a": {
-      "type": "image-grid",
-      "blocks": {
-        "1657749392323aa7fa-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1657749392323aa7fa-0"
-      ],
-      "settings": {
-        "grid_mobile_items_per_row": "1",
-        "grid_desktop_items_per_row": 2,
-        "button_text": "",
-        "button_link": ""
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -145,7 +124,6 @@
     "slideshow",
     "1657735884bb277b04",
     "1657749453529a9818",
-    "165774939245ee212a",
     "featured-collections"
   ]
 }
