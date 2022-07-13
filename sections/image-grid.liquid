@@ -31,8 +31,8 @@
   
                     {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: image -%}{%- endcapture -%}
                     {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                                    {{ block.settings.image.width }}
-                    <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}" data-media-id="{{ image.id }}">
+                                    
+                    <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" style="max-width: {{ block.settings.image.width }}px;" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}" data-media-id="{{ image.id }}">
                     <span class="Image__Loader"></span>
                 
                     <noscript>
