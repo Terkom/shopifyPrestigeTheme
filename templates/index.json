@@ -64,6 +64,13 @@
     "165775000702c0a96f": {
       "type": "image-grid",
       "blocks": {
+        "c9d02785-d0d3-4345-a8f1-507451d7e397": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-chains_2ee01de7-0e95-4523-bb26-6552ca2ed000.jpg",
+            "link": "shopify:\/\/collections\/sneaker-chains"
+          }
+        },
         "1657750007e493dded-0": {
           "type": "image",
           "settings": {
@@ -78,13 +85,6 @@
             "link": "shopify:\/\/collections\/lacetips"
           }
         },
-        "c9d02785-d0d3-4345-a8f1-507451d7e397": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-chains_2ee01de7-0e95-4523-bb26-6552ca2ed000.jpg",
-            "link": "shopify:\/\/collections\/sneaker-chains"
-          }
-        },
         "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
           "type": "image",
           "settings": {
@@ -94,9 +94,9 @@
         }
       },
       "block_order": [
+        "c9d02785-d0d3-4345-a8f1-507451d7e397",
         "1657750007e493dded-0",
         "567bbf1b-6e29-40e2-91f1-c14dd0367b3d",
-        "c9d02785-d0d3-4345-a8f1-507451d7e397",
         "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306"
       ],
       "settings": {
