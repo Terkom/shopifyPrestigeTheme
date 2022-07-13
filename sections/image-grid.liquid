@@ -8,7 +8,7 @@
 
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
       
-                <div class="AspectRatio" style="max-width: {{ block.settings.image.width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: block.settings.image.max_width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
                   {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   <img class="Image--lazyLoad"
                     data-src="{{ image_url }}"
@@ -91,6 +91,16 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "label": "Scale maximum width",
+          "min": 5,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 100
         },
         {
           "type": "url",
