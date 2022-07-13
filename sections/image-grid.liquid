@@ -1,7 +1,7 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
       <div class="ProductListWrapper">
-        <div class="Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
+        <div class="ProductList ProductList--grid ProductList--removeMargin Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
           {%- for block in section.blocks -%}
             {%- assign image = block.settings.image -%}
               <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
@@ -9,7 +9,7 @@
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200, 335, 670', image: block.settings.image -%}{%- endcapture -%}
                 {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
-                <img class="Image--lazyLoad Image--fadeIn" 
+                <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" 
                   data-src="{{ image_url }}"
                   data-widths="[{{ supported_sizes }}]" 
                   data-sizes="auto"
