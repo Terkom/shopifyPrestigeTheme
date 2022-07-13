@@ -1,9 +1,3 @@
-{%- capture section_settings -%}
-{
-  "layout": {{ section.settings.layout_mode | json }}
-}
-{%- endcapture -%}
-
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
       <div class="ProductListWrapper">
