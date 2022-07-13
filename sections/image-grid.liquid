@@ -45,9 +45,23 @@
             </div>
           {%- else -%}
             <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
-              {%- for product in collection.products -%}
+              {%- for block in section.blocks -%}
                 <div class="Carousel__Cell">
-                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+                  {%- assign image = block.settings.image -%}
+                  <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up">
+  
+                    {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: image -%}{%- endcapture -%}
+                    {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                    
+                    <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" style="max-width: {{ block.settings.image.width }}px;" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ block.settings.image.alt | escape }}" data-media-id="{{ image.id }}">
+                    <span class="Image__Loader"></span>
+                
+                    <noscript>
+                      <img class="ProductItem__Image ProductItem__Image--alternate" src="{{ product.media[1] | img_url: '600x' }}" alt="{{ product.media[1].alt | escape }}">
+                      <img class="ProductItem__Image" src="{{ product.featured_media| img_url: '600x' }}" alt="{{ product.featured_media.alt | escape }}">
+                    </noscript>
+                    
+                  </div>
                 </div>
               {%- endfor -%}
             </div>
