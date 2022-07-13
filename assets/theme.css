@@ -5666,7 +5666,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 /* The SectionFooter is usually use at the end of a given section to redirect somewhere else */
 .SectionFooter {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -5713,7 +5713,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .SectionFooter {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 }
 .TableWrapper {
