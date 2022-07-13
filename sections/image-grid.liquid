@@ -15,9 +15,10 @@
                   data-sizes="auto"
                   alt="{{ block.settings.image.alt | escape }}"
                   data-media-id="{{ image.id }}">
-                <span class="Image__Loader"></span> 
                   -->
-                  <img src="{{ image_url }}" loading="lazy">
+                <span class="Image__Loader"></span> 
+                  
+                  <img class="Image--lazyLoad Image--fadeIn" style="max-width: {{ block.settings.image.width }}px;"src="{{ image_url }}" loading="lazy">
             
                 <noscript>
                   <img class="" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
