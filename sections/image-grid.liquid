@@ -14,7 +14,7 @@
                     data-src="{{ image_url }}"
                     data-widths="[{{ supported_sizes }}]"
                     data-sizes="auto"
-                    alt="{{ block.settings.image.alt | escape }}">
+                    alt="{{ block.settings.image.alt | escape }}"> {{ block.settings.max_width }}
                 </div>
                 <span class="Image__Loader"></span>             
                         <noscript>
