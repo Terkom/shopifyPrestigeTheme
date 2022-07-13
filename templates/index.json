@@ -57,10 +57,41 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "1657735884bb277b04": {
+      "type": "image-grid",
+      "blocks": {
+        "1657735884faeda64e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reviews-1.png",
+            "grid_items_count": 8,
+            "button_text": "Shop Now"
+          }
+        },
+        "47f858c0-0081-4ae0-b558-624646b8b6f5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
+            "grid_items_count": 8,
+            "button_text": "Shop Now"
+          }
+        }
+      },
+      "block_order": [
+        "1657735884faeda64e-0",
+        "47f858c0-0081-4ae0-b558-624646b8b6f5"
+      ],
+      "settings": {
+        "layout_mode": "grid",
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collections"
+    "featured-collections",
+    "1657735884bb277b04"
   ]
 }
