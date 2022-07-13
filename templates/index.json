@@ -61,6 +61,51 @@
         "button_link": "shopify:\/\/collections\/everything"
       }
     },
+    "165775000702c0a96f": {
+      "type": "image-grid",
+      "blocks": {
+        "1657750007e493dded-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-charms-gem.jpg",
+            "link": "shopify:\/\/collections\/everything"
+          }
+        },
+        "567bbf1b-6e29-40e2-91f1-c14dd0367b3d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-lace-tips_7225058f-422d-4806-a20d-5632c4fb2279.jpg",
+            "link": "shopify:\/\/collections\/lacetips"
+          }
+        },
+        "c9d02785-d0d3-4345-a8f1-507451d7e397": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-chains_2ee01de7-0e95-4523-bb26-6552ca2ed000.jpg",
+            "link": "shopify:\/\/collections\/sneaker-chains"
+          }
+        },
+        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-shoelaces.jpg",
+            "link": "shopify:\/\/collections\/shoelaces"
+          }
+        }
+      },
+      "block_order": [
+        "1657750007e493dded-0",
+        "567bbf1b-6e29-40e2-91f1-c14dd0367b3d",
+        "c9d02785-d0d3-4345-a8f1-507451d7e397",
+        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306"
+      ],
+      "settings": {
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4,
+        "button_text": "",
+        "button_link": ""
+      }
+    },
     "1657749453529a9818": {
       "type": "slideshow",
       "blocks": {
@@ -123,6 +168,7 @@
   "order": [
     "slideshow",
     "1657735884bb277b04",
+    "165775000702c0a96f",
     "1657749453529a9818",
     "featured-collections"
   ]
