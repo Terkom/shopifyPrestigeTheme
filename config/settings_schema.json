@@ -4,8 +4,8 @@
     "theme_name": "Prestige",
     "theme_author": "Maestrooo",
     "theme_version": "5.7.0",
-    "theme_documentation_url": "https://support.maestrooo.com/",
-    "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
+    "theme_documentation_url": "https:\/\/support.maestrooo.com\/",
+    "theme_support_url": "https:\/\/support.maestrooo.com\/article\/203-contact-us"
   },
   {
     "name": "Colors",
@@ -53,8 +53,14 @@
       {
         "type": "color",
         "id": "product_on_sale_color",
-        "label": "On sale accent",
+        "label": "On sale text accent",
         "default": "#f94c43"
+      },
+      {
+        "type": "color",
+        "id": "brand_color",
+        "label": "Brand accent color",
+        "default": "#f49ac1"
       },
       {
         "type": "header",
@@ -264,7 +270,7 @@
         "type": "textarea",
         "id": "color_swatch_config",
         "label": "Configuration",
-        "info": "Each rule must be in its own line. [Learn more](https://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
+        "info": "Each rule must be in its own line. [Learn more](https:\/\/support.maestrooo.com\/article\/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
       }
     ]
   },
@@ -351,7 +357,7 @@
         "type": "checkbox",
         "id": "show_product_rating",
         "label": "Show product rating",
-        "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+        "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)",
         "default": false
       },
       {
@@ -485,7 +491,7 @@
         "type": "checkbox",
         "id": "cart_show_free_shipping_threshold",
         "label": "Show free shipping minimum amount",
-        "info": "Make sure that you have properly configured your [shipping rates](/admin/settings/shipping).",
+        "info": "Make sure that you have properly configured your [shipping rates](\/admin\/settings\/shipping).",
         "default": false
       },
       {
@@ -507,67 +513,67 @@
       {
         "type": "text",
         "id": "social_facebook",
-        "info": "https://www.facebook.com/shopify",
+        "info": "https:\/\/www.facebook.com\/shopify",
         "label": "Facebook"
       },
       {
         "type": "text",
         "id": "social_twitter",
-        "info": "https://twitter.com/shopify",
+        "info": "https:\/\/twitter.com\/shopify",
         "label": "Twitter"
       },
       {
         "type": "text",
         "id": "social_pinterest",
-        "info": "https://www.pinterest.com/shopify",
+        "info": "https:\/\/www.pinterest.com\/shopify",
         "label": "Pinterest"
       },
       {
         "type": "text",
         "id": "social_instagram",
-        "info": "https://instagram.com/shopify",
+        "info": "https:\/\/instagram.com\/shopify",
         "label": "Instagram"
       },
       {
         "type": "text",
         "id": "social_vimeo",
-        "info": "https://vimeo.com/shopify",
+        "info": "https:\/\/vimeo.com\/shopify",
         "label": "Vimeo"
       },
       {
         "type": "text",
         "id": "social_tumblr",
-        "info": "https://shopify.tumblr.com",
+        "info": "https:\/\/shopify.tumblr.com",
         "label": "Tumblr"
       },
       {
         "type": "text",
         "id": "social_youtube",
-        "info": "https://www.youtube.com/user/shopify",
+        "info": "https:\/\/www.youtube.com\/user\/shopify",
         "label": "YouTube"
       },
       {
         "type": "text",
         "id": "social_tiktok",
-        "info": "https://www.tiktok.com/shopify",
+        "info": "https:\/\/www.tiktok.com\/shopify",
         "label": "TikTok"
       },
       {
         "type": "text",
         "id": "social_linkedin",
-        "info": "https://linkedin.com/in/shopify",
+        "info": "https:\/\/linkedin.com\/in\/shopify",
         "label": "LinkedIn"
       },
       {
         "type": "text",
         "id": "social_snapchat",
-        "info": "https://snapchat.com/add/shopify",
+        "info": "https:\/\/snapchat.com\/add\/shopify",
         "label": "Snapchat"
       },
       {
         "type": "text",
         "id": "social_fancy",
-        "info": "https://fancy.com/Shopify",
+        "info": "https:\/\/fancy.com\/Shopify",
         "label": "Fancy"
       }
     ]
