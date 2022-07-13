@@ -21,7 +21,7 @@
 {%- endcapture -%}
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
-    <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
+    <div class="TabPanel" id="block-{{ block.id }}" role="tabpanel" {{ block.shopify_attributes }}>
       <div class="ProductListWrapper">
           {%- if section.settings.layout_mode == 'grid' -%}
             <div class="ProductList ProductList--grid ProductList--removeMargin Grid" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
