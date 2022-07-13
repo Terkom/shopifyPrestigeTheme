@@ -4326,15 +4326,13 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin: 0;
 }
 
-/* LEAVE MOBILE ANNOUNCEMENT BAR TEXT AS DEFAULT SIZE
- *
- * @media screen and (min-width: 641px) {
- *   .AnnouncementBar {
- *    
- *     font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
- *   }
- * }
- */
+// LEAVE MOBILE ANNOUNCEMENT BAR TEXT AS DEFAULT SIZE
+@media screen and (min-width: 641px) {
+ .AnnouncementBar {   
+    // font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
+    font-size: var(--base-text-font-size);
+  }
+}
 
 /**
  * ----------------------------------------------------------------------------
