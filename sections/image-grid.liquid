@@ -6,13 +6,13 @@
             {%- assign image = block.settings.image -%}
               <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
 
-                {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200, 335, 670', image: image -%}{%- endcapture -%}
+                {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200, 335, 670', image: block.settings.image -%}{%- endcapture -%}
                 {%- assign image_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
                 <img class="ProductImage Image--lazyLoad Image--fadeIn" 
                   data-src="{{ image_url }}"
                   data-widths="[{{ supported_sizes }}]" 
-                  sizes="(max-width: {{ block.settings.image.width }}px) 200px, 335px, 670px"
+                  data-sizes="auto"
                   alt="{{ block.settings.image.alt | escape }}"
                   data-media-id="{{ image.id }}">
                 <span class="Image__Loader"></span> 
