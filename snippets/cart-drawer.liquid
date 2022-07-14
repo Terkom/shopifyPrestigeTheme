@@ -30,7 +30,7 @@
               <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
             {%- endif -%}
             <div class="cart__shipping-bar">
-              <span class="side-cart__shipping-bar--fill" style="width: {{ remaining_amount | divided_by: settings.cart_free_shipping_threshold | times: 100 }}%;"></span>
+              <span class="side-cart__shipping-bar--fill" style="width: {{ cart.total_price | divided_by: threshold_in_cents}}%;"></span>
             </div>
             {{ cart.total_price }} / {{ settings.cart_free_shipping_threshold }}
           </div>
