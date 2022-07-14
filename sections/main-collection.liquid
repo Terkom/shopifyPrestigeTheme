@@ -27,7 +27,7 @@
                {% if product.tags contains 'expand_all' %}
                   {% for variant in product.variants %}
                     <div class="Grid__Cell 1/{{ mobile_items_per_row }}--phone 1/{{ tablet_items_per_row }}--tablet-and-up 1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up{% else %}desk{% endif %}">
-                      {%- render 'product-item', product: product, variant: variant, show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+                      {%- render 'product-item', product: product, variant: variant, show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: false, show_labels: true -%}
                     </div>
                   {% endfor %}
                 {% else %}
