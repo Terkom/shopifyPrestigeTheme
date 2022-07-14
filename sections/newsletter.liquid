@@ -6,7 +6,7 @@
       {% if section.settings.image %}
         style="background: url({{ section.settings.image | img_url: '1x1' }})"
       {% else %}
-        style="background: --var(brand-color);"
+        style="background: {{ section.settings.background_color }};"
       {% endif %}>
       <div class="ImageHero__ImageWrapper">
         <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
@@ -123,6 +123,12 @@
       "id": "button_color",
       "label": "Button text",
       "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f49ac1"
     },
     {
       "type": "text",
