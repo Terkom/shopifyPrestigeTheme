@@ -2,12 +2,7 @@
   {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
   <div class="FlexboxIeFix">
-    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter" 
-      {% if section.settings.image %}
-        style="background: url({{ section.settings.image | img_url: '1x1' }})"
-      {% else %}
-        style="background: {{ section.settings.background_color }};"
-      {% endif %}>
+    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
       <div class="ImageHero__ImageWrapper">
         <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
              data-optimumx="1.4"
@@ -123,12 +118,6 @@
       "id": "button_color",
       "label": "Button text",
       "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background",
-      "default": "#f49ac1"
     },
     {
       "type": "text",
