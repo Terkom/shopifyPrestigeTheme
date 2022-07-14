@@ -6,7 +6,7 @@
         "slide-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/green-1800x800.jpg",
+            "image": "shopify:\/\/shop_images\/6-hero-desktop.jpg",
             "mobile_image": "shopify:\/\/shop_images\/green-mobile-zoomed.jpg",
             "apply_overlay": false,
             "content_position": "bottomRight",
