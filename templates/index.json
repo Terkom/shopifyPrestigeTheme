@@ -207,8 +207,8 @@
       "type": "newsletter-plain",
       "settings": {
         "section_size": "small",
-        "text_color": "#ffffff",
-        "button_color": "#000000",
+        "text_color": "#323232",
+        "button_color": "#ffffff",
         "background_color": "#ffdceb",
         "subheading": "",
         "title": "Keep in touch.",
