@@ -173,39 +173,38 @@
 
         {%- if product.template_suffix != 'coming-soon' -%}
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
-            {%- if product.compare_at_price > product.price -%}
-              {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
-                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money_with_currency }}</span>
-              {%- else -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money }}</span>
-                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
+            {%- if xvariant -%}
+              {%- if xvariant.compare_at_price > xvariant.price -%}
+                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ xvariant.price | money }}</span>
+                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ xvariant.compare_at_price | money }}</span>
+              {%- else %}
+                {{ xvariant.price | money }}
               {%- endif -%}
-            {%- elsif product.price_varies -%}
-              {%- if xvariant -%}
-                {%- if xvariant.compare_at_price > xvariant.price -%}
-                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ xvariant.price | money }}</span>
-                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ xvariant.compare_at_price | money }}</span>
-                {%- else %}
-                  {{ xvariant.price | money }}
+            {%- else -%}
+              {%- if product.compare_at_price > product.price -%}
+                {%- if settings.currency_code_enabled -%}
+                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
+                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money_with_currency }}</span>
+                {%- else -%}
+                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money }}</span>
+                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
                 {%- endif -%}
+              {%- elsif product.price_varies -%}
+                  {%- if settings.currency_code_enabled -%}
+                    {%- capture formatted_min_price -%}{{ product.price_min | money_with_currency }}{%- endcapture -%}
+                    {%- capture formatted_max_price -%}{{ product.price_max | money_with_currency }}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
+                    {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+                  {%- endif -%}
+                {%- endif -%}
+                <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
               {%- else -%}
                 {%- if settings.currency_code_enabled -%}
-                  {%- capture formatted_min_price -%}{{ product.price_min | money_with_currency }}{%- endcapture -%}
-                  {%- capture formatted_max_price -%}{{ product.price_max | money_with_currency }}{%- endcapture -%}
+                  <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_with_currency }}</span>
                 {%- else -%}
-                  {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
-                  {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+                  <span class="ProductItem__Price Price Text--subdued">{{ product.price | money }}</span>
                 {%- endif -%}
-              {%- endif -%}
-
-              <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
-            {%- else -%}
-              {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_with_currency }}</span>
-              {%- else -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money }}</span>
-              {%- endif -%}
             {%- endif -%}
           </div>
 
