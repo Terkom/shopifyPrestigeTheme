@@ -1,5 +1,11 @@
 {
   "sections": {
+    "16578343597132b44e": {
+      "type": "mobile-extra-nav",
+      "settings": {
+        "extra_nav_menu": "extra-mobile-nav-menu"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -50,6 +56,13 @@
           "type": "share_buttons",
           "settings": {
           }
+        },
+        "487620e0-d458-48a1-8c1f-43587657e53d": {
+          "type": "buy_it_with",
+          "settings": {
+            "product": "bar-shoelace-charm",
+            "title": "Buy it with"
+          }
         }
       },
       "block_order": [
@@ -59,7 +72,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share_buttons"
+        "share_buttons",
+        "487620e0-d458-48a1-8c1f-43587657e53d"
       ],
       "settings": {
         "image_size": "small",
@@ -109,19 +123,13 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "16578343597132b44e": {
-      "type": "mobile-extra-nav",
-      "settings": {
-        "extra_nav_menu": "extra-mobile-nav-menu"
-      }
     }
   },
   "order": [
+    "16578343597132b44e",
     "main",
     "1657649384c14394b7",
     "product-recommendations",
-    "recently-viewed-products",
-    "16578343597132b44e"
+    "recently-viewed-products"
   ]
 }
