@@ -5624,7 +5624,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .SectionHeader:not(:only-child) {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .SectionHeader--center {
@@ -7324,7 +7324,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .ProductList--grid > .Grid__Cell {
     padding-left: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 }
 
@@ -7344,7 +7344,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .ProductList--grid > .Grid__Cell {
     padding-left: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
