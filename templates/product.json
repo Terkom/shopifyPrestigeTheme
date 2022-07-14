@@ -61,7 +61,7 @@
           "type": "buy_it_with",
           "settings": {
             "product": "{{ product.metafields.custom.cross_promoted_product.value }}",
-            "title": "Wear it with"
+            "title": "Pair it with"
           }
         }
       },
