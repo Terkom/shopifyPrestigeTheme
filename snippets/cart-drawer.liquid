@@ -69,7 +69,7 @@
           {%- endif -%}
         {%- endif -%}
 
-        <span>Subtotal: {{ cart.total_price | money_with_currency }}</span>
+        <span>Subtotal: {{ cart.total_price | money }}</span>
         
         <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">
           <span>{{- 'cart.general.checkout' | t -}}</span>
