@@ -5707,7 +5707,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .SectionHeader:not(:only-child) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .SectionHeader__Description {
