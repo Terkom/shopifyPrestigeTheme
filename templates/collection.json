@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1657832626ddabe006": {
+      "type": "mobile-extra-nav",
+      "settings": {
+        "extra_nav_menu": "main-menu"
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -33,6 +39,7 @@
     }
   },
   "order": [
+    "1657832626ddabe006",
     "main",
     "recently-viewed-products"
   ]
