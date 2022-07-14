@@ -51,6 +51,8 @@
   }
 
   #section-{{ section.id }} .Form__Input {
+    color: {{ section.settings.text_color }};
+    border-color: {{ section.settings.text_color }};
     background-color: {{ section.settings.button_color }};
   }
   #section-{{ section.id }} .Form__Submit::before {
