@@ -1,6 +1,6 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="{%- if section.settings.grid_margin == true -%}Image--grid {%- endif -%}Grid Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
+      <div class="{%- if section.settings.grid_margin -%}Image--grid {%- endif -%}Grid Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
         {%- for block in section.blocks -%}
           {%- assign image = block.settings.image -%}
           {{ section.settings.grid_margin }}
@@ -66,7 +66,7 @@
     },
     {
       "type": "checkbox",
-      "id": "grid_margins",
+      "id": "grid_margin",
       "label": "Outer margins",
       "default": true
     },
