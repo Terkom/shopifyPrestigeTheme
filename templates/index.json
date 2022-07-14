@@ -191,6 +191,17 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "16577737794cf27db5": {
+      "type": "newsletter",
+      "settings": {
+        "section_size": "small",
+        "text_color": "#1c1b1b",
+        "button_color": "#ffffff",
+        "subheading": "",
+        "title": "Keep in touch.",
+        "content": "<p>Instagram: <a href=\"https:\/\/www.instagram.com\/lacecharms\/\" title=\"https:\/\/www.instagram.com\/lacecharms\/\">@lacecharms<\/a> 💖<\/p><p>Subscribe to receive updates, access to exclusive deals, and more:<\/p>"
+      }
     }
   },
   "order": [
@@ -199,6 +210,7 @@
     "165775000702c0a96f",
     "165776627709b745ac",
     "1657749453529a9818",
-    "featured-collections"
+    "featured-collections",
+    "16577737794cf27db5"
   ]
 }
