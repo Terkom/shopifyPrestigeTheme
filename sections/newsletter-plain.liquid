@@ -1,39 +1,41 @@
 <section id="section-{{ section.id }}">
 
   <div class="FlexboxIeFix" style="background: {{ section.settings.background_color }}; padding: 25px 40px;">
-    <header class="SectionHeader SectionHeader--center">
-      {%- if section.settings.subheading != blank -%}
-        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-      {%- endif -%}
-
-      {%- if section.settings.title != blank -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
-      {%- endif -%}
-
-      {%- if section.settings.content != blank -%}
-        <div class="SectionHeader__Description">
-          {{ section.settings.content }}
-        </div>
-      {%- endif -%}
-    </header>
-
-    {%- assign newsletter_id = 'footer-' | append: section.id -%}
-
-    {%- form 'customer', id: newsletter_id, class: 'Newsletter Form' -%}
-      {%- if form.posted_successfully? -%}
-        <p class="Form__Alert Alert Alert--success">{{ 'home_page.newsletter.success' | t }}</p>
-      {%- else -%}
-        {%- if form.errors -%}
-          <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+    <div class="newsletter_plain">
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
-
-        <div class="Newsletter__Inner">
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'home_page.newsletter.input' | t }}" placeholder="{{ 'home_page.newsletter.input' | t }}" required>
-          <button type="submit" class="Form__Submit Button Button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
-        </div>
-      {%- endif -%}
-    {%- endform -%}
+  
+        {%- if section.settings.title != blank -%}
+          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+  
+        {%- if section.settings.content != blank -%}
+          <div class="SectionHeader__Description">
+            {{ section.settings.content }}
+          </div>
+        {%- endif -%}
+      </header>
+  
+      {%- assign newsletter_id = 'footer-' | append: section.id -%}
+  
+      {%- form 'customer', id: newsletter_id, class: 'Newsletter Form' -%}
+        {%- if form.posted_successfully? -%}
+          <p class="Form__Alert Alert Alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+        {%- else -%}
+          {%- if form.errors -%}
+            <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+          {%- endif -%}
+  
+          <div class="Newsletter__Inner">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'home_page.newsletter.input' | t }}" placeholder="{{ 'home_page.newsletter.input' | t }}" required>
+            <button type="submit" class="Form__Submit Button Button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
   </div>
 </section>
 
