@@ -17,7 +17,13 @@
       {%- assign has_alternate_image = false -%}
     {%- endif -%}
 
-    <a href="{{ product.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+    {%- if xvariant -%}
+      {%- assign url = xvariant.url -%}
+    {%- else -%}
+      {%- assign url = product.url -%}
+    {%- endif -%}
+
+    <a href="{{ url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
       {%- if use_horizontal -%}
         {%- assign max_width = 125 -%}
       {%- else -%}
@@ -85,7 +91,7 @@
         {%- endif -%}
 
         <h2 class="ProductItem__Title Heading">
-          <a href="{{ product.url }}">{{ product.title }}</a>
+          <a href="{{  }}">{{ product.title }}</a>
         </h2>
       
         {%- if xvariant -%}
@@ -212,6 +218,6 @@
   </div>
 
   {%- if use_horizontal -%}
-    <a href="{{ product.url }}" class="ProductItem__ViewButton Button Button--secondary hidden-pocket">{{ 'collection.product.view_product' | t }}</a>
+    <a href="{{ url }}" class="ProductItem__ViewButton Button Button--secondary hidden-pocket">{{ 'collection.product.view_product' | t }}</a>
   {%- endif -%}
 </div>
