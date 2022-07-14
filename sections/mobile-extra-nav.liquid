@@ -33,6 +33,10 @@
 {% endschema %}
 
 {% stylesheet %}
+  #section-{{ section.id }},
+  #section-{{ section.id }} .shopify-section--header {
+    z-index: 4;
+  }
 {% endstylesheet %}
 
 {% javascript %}
