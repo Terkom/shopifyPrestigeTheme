@@ -108,8 +108,31 @@
         "button_link": ""
       }
     },
+    "165776627709b745ac": {
+      "type": "image-grid",
+      "blocks": {
+        "165776627745435374-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165776627745435374-0"
+      ],
+      "settings": {
+        "grid_mobile_items_per_row": "1",
+        "grid_desktop_items_per_row": 2,
+        "max_width": 100,
+        "button_text": "Shop Now",
+        "button_link": ""
+      }
+    },
     "1657749453529a9818": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16577494529c166378-0": {
           "type": "image",
@@ -171,6 +194,7 @@
     "slideshow",
     "1657735884bb277b04",
     "165775000702c0a96f",
+    "165776627709b745ac",
     "1657749453529a9818",
     "featured-collections"
   ]
