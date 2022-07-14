@@ -4,11 +4,11 @@
     <div class="newsletter_plain">
       <header class="SectionHeader SectionHeader--center">
         {%- if section.settings.subheading != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+          <span class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</span>
         {%- endif -%}
   
         {%- if section.settings.title != blank -%}
-          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          <span class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</span>
         {%- endif -%}
   
         {%- if section.settings.content != blank -%}
