@@ -7200,7 +7200,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .ProductItem__Vendor,
 .ProductItem__Title {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 
 .ProductItem__ColorSwatchList {
