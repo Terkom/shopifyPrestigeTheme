@@ -6455,7 +6455,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .cart__shipping-bar {
-  background: var(--background);
+  background: var(--border-color);
   width: 100%;
   max-width: 330px;
   margin: auto;
