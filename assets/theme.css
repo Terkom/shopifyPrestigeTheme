@@ -6455,7 +6455,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .cart__shipping-bar {
-  background: $color--white;
+  background: var(--background);
   width: 100%;
   max-width: 330px;
   margin: auto;
@@ -6467,7 +6467,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .side-cart__shipping-bar--fill {
   transition: all 0.3s;
   width: 0%;
-  background: $color--money-green;
+  background: var(--brand-color);
   display: block;
   height: 10px;
   border-radius: 5px;
