@@ -183,10 +183,10 @@
               {%- endif -%}
             {%- elsif product.price_varies -%}
               {%- if xvariant -%}
-                {%- if variant.compare_at_price > variant.price -%}
-                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ variant.price | money }}</span>
-                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ variant.compare_at_price | money }}</span>
-                {%- else -%}
+                {%- if xvariant.compare_at_price > xvariant.price -%}
+                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ xvariant.price | money }}</span>
+                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ xvariant.compare_at_price | money }}</span>
+                {%- else %}
                   {{ xvariant.price | money }}
                 {%- endif -%}
               {%- else -%}
