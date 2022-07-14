@@ -1,8 +1,9 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="{%- if section.settings.grid_margin == "true" -%}Image--grid {%- endif -%}Grid Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
+      <div class="{%- if section.settings.grid_margin == true -%}Image--grid {%- endif -%}Grid Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
         {%- for block in section.blocks -%}
           {%- assign image = block.settings.image -%}
+          {{ section.settings.grid_margin }}
             <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
 
               {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
