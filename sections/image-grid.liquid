@@ -1,29 +1,27 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="ProductListWrapper">
-        <div class="ProductList ProductList--grid ProductList--removeMargin Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
-          {%- for block in section.blocks -%}
-            {%- assign image = block.settings.image -%}
-              <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
+      <div class="Grid--center" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
+        {%- for block in section.blocks -%}
+          {%- assign image = block.settings.image -%}
+            <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;">
 
-                {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
-      
-                <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: section.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
-                  {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="Image--lazyLoad"
-                    data-src="{{ image_url }}"
-                    data-widths="[{{ supported_sizes }}]"
-                    data-sizes="auto"
-                    alt="{{ block.settings.image.alt | escape }}">
-                </div>
-                <span class="Image__Loader"></span>             
-                        <noscript>
-                          <img class="" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
-                        </noscript>
-                  {%- if block.settings.link != blank -%}</a>{%- endif -%}
+              {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
+    
+              <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: section.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+                {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="Image--lazyLoad"
+                  data-src="{{ image_url }}"
+                  data-widths="[{{ supported_sizes }}]"
+                  data-sizes="auto"
+                  alt="{{ block.settings.image.alt | escape }}">
               </div>
-          {%- endfor -%}
-        </div>
+              <span class="Image__Loader"></span>             
+                      <noscript>
+                        <img class="" src="{{ block.settings.image | img_url: '600x' }}" alt="{{ block.settings.image.alt | escape }}">
+                      </noscript>
+                {%- if block.settings.link != blank -%}</a>{%- endif -%}
+            </div>
+        {%- endfor -%}
       </div>
       {%- if section.settings.button_link != blank -%}
         <div class="Container">
@@ -34,11 +32,6 @@
       {%- endif -%}
     </div>
 </section>
-
-{%- capture hack -%}
-{%- comment -%}This is just an ugly hack to make those variables appear as part of the theme editor in the General Settings{%- endcomment -%}
-{% if section.settings.layout_mode == 'grid' %}{{ settings.product_list_horizontal_spacing }},{{ settings.product_list_vertical_spacing }}{% endif %}
-{%- endcapture -%}
 
 {% schema %}
 {
