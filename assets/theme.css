@@ -7176,7 +7176,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .ProductItem__Info {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
 }
 
