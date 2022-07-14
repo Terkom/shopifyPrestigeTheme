@@ -100,7 +100,11 @@
           {%- assign color_swatch_list = '' -%}
 
           {%- capture color_swatch -%}
-            {%- assign color_label = 'color,metal,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
+            {% if product.options contains 'color' %}
+              {%- assign color_label = 'color' | split: ',' -%}
+            {% elsif product.options contains 'metal' %}
+              {%- assign color_label = 'metal' | split: ',' -%}
+            {% endif %}
             {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
             {%- capture color_name -%}{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
