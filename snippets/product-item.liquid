@@ -197,7 +197,6 @@
                     {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
                     {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
                   {%- endif -%}
-                {%- endif -%}
                 <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
               {%- else -%}
                 {%- if settings.currency_code_enabled -%}
@@ -205,6 +204,7 @@
                 {%- else -%}
                   <span class="ProductItem__Price Price Text--subdued">{{ product.price | money }}</span>
                 {%- endif -%}
+              {%- endif -%}
             {%- endif -%}
           </div>
 
