@@ -11,11 +11,13 @@
       {%- assign use_natural_size = false -%}
     {%- endif -%}
 
-    {%- if settings.product_show_secondary_image and product.media[1] != blank and use_horizontal != true and xvariant != true -%}
-      {%- assign has_alternate_image = true -%}
-    {%- else -%}
-      {%- assign has_alternate_image = false -%}
-    {%- endif -%}
+    {%- unless xvariant -%}
+      {%- if settings.product_show_secondary_image and product.media[1] != blank and use_horizontal != true -%}
+        {%- assign has_alternate_image = true -%}
+      {%- else -%}
+        {%- assign has_alternate_image = false -%}
+      {%- endif -%}
+    {%- endunless -%}
 
     {%- if xvariant -%}
       {%- assign url = xvariant.url -%}
