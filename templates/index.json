@@ -48,14 +48,22 @@
             "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
             "link": ""
           }
+        },
+        "e2adfe6c-7cea-42e7-a745-f2538a7a16de": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reviews-1.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1657735884faeda64e-0",
-        "47f858c0-0081-4ae0-b558-624646b8b6f5"
+        "47f858c0-0081-4ae0-b558-624646b8b6f5",
+        "e2adfe6c-7cea-42e7-a745-f2538a7a16de"
       ],
       "settings": {
-        "grid_mobile_items_per_row": "2",
+        "grid_mobile_items_per_row": 3,
         "grid_desktop_items_per_row": 4,
         "grid_margin": true,
         "max_width": 60,
@@ -102,7 +110,7 @@
         "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306"
       ],
       "settings": {
-        "grid_mobile_items_per_row": "2",
+        "grid_mobile_items_per_row": 2,
         "grid_desktop_items_per_row": 4,
         "grid_margin": true,
         "max_width": 100,
@@ -125,45 +133,12 @@
         "165776627745435374-0"
       ],
       "settings": {
-        "grid_mobile_items_per_row": "1",
+        "grid_mobile_items_per_row": 1,
         "grid_desktop_items_per_row": 1,
         "grid_margin": false,
         "max_width": 50,
         "button_text": "Shop Now",
         "button_link": ""
-      }
-    },
-    "1657749453529a9818": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "16577494529c166378-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16577494529c166378-0"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
       }
     },
     "featured-collections": {
@@ -210,7 +185,6 @@
     "1657735884bb277b04",
     "165775000702c0a96f",
     "165776627709b745ac",
-    "1657749453529a9818",
     "featured-collections",
     "16577748627471cce1"
   ]
