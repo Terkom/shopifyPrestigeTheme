@@ -1,6 +1,6 @@
 <section id="section-{{ section.id }}">
 
-  <div style="background: {{ section.settings.background_color }}; padding: 25px 40px;">
+  <div class="FlexboxIeFix" style="background: {{ section.settings.background_color }}; padding: 25px 40px;">
     <header class="SectionHeader SectionHeader--center">
       {%- if section.settings.subheading != blank -%}
         <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
