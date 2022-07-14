@@ -6454,6 +6454,26 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 }
 
+.cart__shipping-bar {
+  background: $color--white;
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.side-cart__shipping-bar--fill {
+  transition: all 0.3s;
+  width: 0%;
+  background: $color--money-green;
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+}
+
+
 /**
  * ----------------------------------------------------------------------------
  * Items
