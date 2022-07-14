@@ -3,7 +3,7 @@
     "1657832626ddabe006": {
       "type": "mobile-extra-nav",
       "settings": {
-        "extra_nav_menu": "main-menu"
+        "extra_nav_menu": "extra-mobile-nav-menu"
       }
     },
     "main": {
