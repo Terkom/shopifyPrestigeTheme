@@ -8019,6 +8019,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   z-index: 5;
 }
 
+.mobile-extra--header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
 .Header .Heading,
 .Header .Link--secondary,
 .Header .Link--primary:hover {
