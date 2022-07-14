@@ -101,9 +101,9 @@
 
           {%- capture color_swatch -%}
             {% if product.options contains 'color' %}
-              {%- assign color_label = 'color' | split: ',' -%}
+              {%- assign color_label = 'color' -%}
             {% elsif product.options contains 'metal' %}
-              {%- assign color_label = 'metal' | split: ',' -%}
+              {%- assign color_label = 'metal' -%}
             {% endif %}
             {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
             {%- capture color_name -%}{{ section.id }}-{{ product.id }}{%- endcapture -%}
