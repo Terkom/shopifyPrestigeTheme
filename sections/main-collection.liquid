@@ -135,6 +135,10 @@
       {%- assign show_filters = true -%}
     {%- endif -%}
 
+    {%- if collection.tags contains 'expand_all' %}
+      {%- assign show_filters = false -%}
+    {%- endif -%}
+
     {%- capture collection_toolbar -%}
       {%- if show_filters or section.settings.show_sort_by or section.settings.show_layout_switch -%}
         <div class="CollectionToolbar CollectionToolbar--{{ section.settings.toolbar_position }} {% unless section.settings.show_layout_switch and show_filters == false and section.settings.show_sort_by == false %}CollectionToolbar--reverse{% endunless %}">
