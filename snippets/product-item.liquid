@@ -98,7 +98,7 @@
 
         {%- if show_color_swatch -%}
           {%- assign color_swatch_list = '' -%}
-
+{{ product.options }}
           {%- capture color_swatch -%}
             {% if product.options contains 'color' %}
               {%- assign color_label = 'color' -%}
