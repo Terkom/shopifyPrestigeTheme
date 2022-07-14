@@ -182,12 +182,21 @@
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
               {%- endif -%}
             {%- elsif product.price_varies -%}
-              {%- if settings.currency_code_enabled -%}
-                {%- capture formatted_min_price -%}{{ product.price_min | money_with_currency }}{%- endcapture -%}
-                {%- capture formatted_max_price -%}{{ product.price_max | money_with_currency }}{%- endcapture -%}
+              {%- if xvariant -%}
+                {%- if variant.compare_at_price > variant.price -%}
+                  <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ variant.price | money }}</span>
+                  <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ variant.compare_at_price | money }}</span>
+                {%- else -%}
+                  {{ xvariant.price | money }}
+                {%- endif -%}
               {%- else -%}
-                {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
-                {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+                {%- if settings.currency_code_enabled -%}
+                  {%- capture formatted_min_price -%}{{ product.price_min | money_with_currency }}{%- endcapture -%}
+                  {%- capture formatted_max_price -%}{{ product.price_max | money_with_currency }}{%- endcapture -%}
+                {%- else -%}
+                  {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
+                  {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+                {%- endif -%}
               {%- endif -%}
 
               <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
