@@ -32,7 +32,7 @@
             <div class="cart__shipping-bar">
               <span class="side-cart__shipping-bar--fill" style="width: {{ cart.total_price | divided_by: threshold_in_cents }}%;"></span>
             </div>
-            {{ cart.total_price }} / {{ threshold_in_cents }} = {{ cart.total_price | divided_by: threshold_in_cents | times: 100 }}
+            {{ cart.total_price }} / {{ threshold_in_cents }} = {{ cart.total_price | divided_by: threshold_in_cents | times: 100.0 }}
           </div>
         </div>
       {%- endif -%}
