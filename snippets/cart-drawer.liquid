@@ -47,6 +47,28 @@
 
     {%- unless cart.item_count == 0 -%}
       <div class="Drawer__Footer" data-drawer-animated-bottom>
+      <script id="PromoTemplate" type="text/template">
+        {% raw %}
+        <div class="ajaxcart__upsell">
+          <h3 class="ajaxcart__upsell-heading">Frequently Bought Together</h3>
+          <div style="height: 142px">
+          {{#product}}
+          	<div class="ajaxcart__upsell-item img-lazyload lazyload js o-layout__item u-1/3">
+        		<a href="/products/{{ handle }}?variant={{ id }}&utm-link=cart-us">
+                  <img class="img-lazyload lazyload js" data-src="{{ img_src }}">
+                </a>
+                <form method="post" action="" id="product_form_{{id}}" accept-charset="UTF-8" class="ajaxcart__upsell-form js-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+        			<input type="hidden" name="id" value="{{ id }}" />
+                    <button onClick="addItem('product_form_{{id}}'); return false;" type="submit" name="add" class="ajaxcart__add-btn c-btn--white js-product-add">
+                    	<span class="js-product-add-text">Add {{ price }}</span>
+                    </button>
+          		</form>
+            </div>
+          {{/product}}
+          </div>
+        </div>
+        {% endraw %}
+      </script>
         {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
 
         {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
@@ -97,25 +119,3 @@
   </form>
 </div>
 
-<script id="PromoTemplate" type="text/template">
-{% raw %}
-<div class="ajaxcart__upsell">
-  <h3 class="ajaxcart__upsell-heading">Frequently Bought Together</h3>
-  <div style="height: 142px">
-  {{#product}}
-  	<div class="ajaxcart__upsell-item img-lazyload lazyload js o-layout__item u-1/3">
-		<a href="/products/{{ handle }}?variant={{ id }}&utm-link=cart-us">
-          <img class="img-lazyload lazyload js" data-src="{{ img_src }}">
-        </a>
-        <form method="post" action="" id="product_form_{{id}}" accept-charset="UTF-8" class="ajaxcart__upsell-form js-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-			<input type="hidden" name="id" value="{{ id }}" />
-            <button onClick="addItem('product_form_{{id}}'); return false;" type="submit" name="add" class="ajaxcart__add-btn c-btn--white js-product-add">
-            	<span class="js-product-add-text">Add {{ price }}</span>
-            </button>
-  		</form>
-    </div>
-  {{/product}}
-  </div>
-</div>
-{% endraw %}
-</script>
