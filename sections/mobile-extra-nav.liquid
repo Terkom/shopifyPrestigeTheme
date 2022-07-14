@@ -1,3 +1,17 @@
+<nav class="Header__MainNav hidden-pocket hidden-lap" aria-label="{{ 'header.navigation.title' | t }}">
+  <ul class="HorizontalList HorizontalList--spacingExtraLoose">
+    {%- for link in section.settings.extra_nav_menu.links -%}
+      {%- assign downcased_link_title = link.title | downcase | strip -%}
+      <li class="HorizontalList__Item">
+        <a href="{{ link.url }}" class="Heading u-h6">
+          {{- link.title | escape -}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+
+
 {% schema %}
   {
     "name": "Mobile Extra Nav Header",
