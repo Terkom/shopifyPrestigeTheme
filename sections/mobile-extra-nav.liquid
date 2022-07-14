@@ -13,18 +13,23 @@
 
 
 {% schema %}
+{
+  "name": "Extra Nav Header",
+  "class": "shopify-section--header",
+  "settings": [
   {
+    "type": "link_list",
+    "id": "extra_nav_menu",
+    "label": "Menu",
+    "default": "main-menu"
+    }
+  ],
+    "presets": [{
     "name": "Extra Nav Header",
-    "class": "shopify-section--header",
-    "settings": [
-    {
-      "type": "link_list",
-      "id": "extra_nav_menu",
-      "label": "Menu",
-      "default": "main-menu"
-      }
-    ]
-  }
+    "category": "Menu"
+  }]
+}
+
 {% endschema %}
 
 {% stylesheet %}
