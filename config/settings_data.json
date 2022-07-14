@@ -103,7 +103,8 @@
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
           "show_transparent_header_border": true,
-          "transparent_text_color": "#ffffff"
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/heart-lacecharms_200w_26d76544-84a7-43ea-98c6-ec1fb8c8b723.png"
         }
       },
       "footer": {
