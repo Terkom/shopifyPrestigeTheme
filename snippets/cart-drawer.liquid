@@ -34,7 +34,7 @@
             {%- else -%}
               {%- assign progress = {{ cart.total_price | divided_by: threshold_in_cents | times: 100 }}
             {%- endif -%}
-            {%- endif -%}
+        {%- endif -%}
             <div class="cart__shipping-bar">
               <span class="side-cart__shipping-bar--fill" style="width: {{ cart.total_price | divided_by: threshold_in_cents }}%;"></span>
             </div>
