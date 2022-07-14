@@ -85,9 +85,13 @@
         {%- endif -%}
 
         <h2 class="ProductItem__Title Heading">
-          <a href="{{ product.url }}">{{ product.title }}</a>x: {{ xvariant }}
+          <a href="{{ product.url }}">{{ product.title }}</a>
         </h2>
-
+      
+        {%- if xvariant -%}
+          <span class="ProductItem__Vendor Heading">{{ xvariant.title }}</span>
+        {% endif %}
+      
         {%- if settings.show_product_rating -%}
           {%- unless use_horizontal -%}
             <div class="ProductItem__Rating Heading Text--subdued u-h7">
