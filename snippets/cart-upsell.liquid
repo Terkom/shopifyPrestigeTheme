@@ -5,11 +5,12 @@ InCart: {{ inCart }}
 
 {%- assign upsell_count = 0 -%}
 
-{% for product in settings.cart_upsell_collection.products %}
-  {{ product.id }}
+{%- for product in settings.cart_upsell_collection.products -%}
+  {%- unless inCart contains product.id -%}
+    {{ product.title }} <br>
+    {%- assign upsell_count = upsell_count | plus: 1 -%}
+  {%- endunless -%}
+  {%- if upsell_count == 3 -%}
+    {%- break -%}
+  {%- endif -%}
 {%- endfor -%}
-upsell2: {{ settings.cart_upsell_2.id }}
-{%- unless inCart contains settings.cart_upsell_2.id -%}
-{{ settings.cart_upsell_2.id }}
-{%- endunless -%}
-
