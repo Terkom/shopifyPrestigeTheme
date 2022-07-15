@@ -2589,9 +2589,8 @@
       key: "_addToCart",
       value: function _addToCart(event) {
         var _this4 = this;
-        console.log("in the right place"); 
+
         if (!this.options['useAjaxCart']) {
-          console.log("thinks useAjaxCart is not true"); 
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
 
@@ -2618,7 +2617,7 @@
 
           if (response.ok) {
             addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
-
+            console.log("in the right place"); 
             _this4.element.dispatchEvent(new CustomEvent('product:added', {
               bubbles: true,
               detail: {
