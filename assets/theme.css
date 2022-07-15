@@ -6489,6 +6489,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .cart_upsell_item {
   margin: 0px 5px;
   width: 33.33%
+  text-align: center;
 }
 
 /**
