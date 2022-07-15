@@ -32,7 +32,7 @@
             <div class="cart__shipping-bar">
               <span class="side-cart__shipping-bar--fill" style="width {{ cart.total_price | times: 1.0 | divided_by: threshold_in_cents | times: 100 }}%;"></span>
             </div>
-        2500/5000 = {{ 2500 | times: 1.00 | divided_by: 5000 | times: 100 | round }}
+        width: {{ cart.total_price | times: 1.00 | divided_by: threshold_in_cents | times: 100 }}
           </div>
         </div>
       {%- endif -%}
