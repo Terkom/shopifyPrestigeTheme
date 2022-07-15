@@ -52,7 +52,7 @@
           {% endfor %}
         <p>
         {% assign upsell_products = upsell_products | split: ',' %}
-        {{ upsell_products }}
+        {{ upsell_products.handle }}
         {% for t in upsell_products %}
           {{  t.handle }} <br>
         {% endfor %}
