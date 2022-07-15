@@ -32,7 +32,6 @@
             <div class="cart__shipping-bar">
               <span class="side-cart__shipping-bar--fill" style="width: {{ cart.total_price | times: 1.00 | divided_by: threshold_in_cents | times: 100 | round }}%;"></span>
             </div>
-        width: {{ cart.total_price | times: 1.00 | divided_by: threshold_in_cents | times: 100 | round }}
           </div>
         </div>
       {%- endif -%}
