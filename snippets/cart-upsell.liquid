@@ -4,6 +4,10 @@
 InCart: {{ inCart }}
 
 {%- assign upsell_count = 0 -%}
+
+{% for product in settings.cart_upsell_collection %}
+  {{ product.id }}
+{%- endfor -%}
 upsell2: {{ settings.cart_upsell_2.id }}
 {%- unless inCart contains settings.cart_upsell_2.id -%}
 {{ settings.cart_upsell_2.id }}
