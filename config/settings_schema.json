@@ -503,7 +503,7 @@
       },
       {
         "type": "collection",
-        "id": "upsell_collection",
+        "id": "cart_upsell_collection",
         "label": "Upsell Collection"
       },
       {
