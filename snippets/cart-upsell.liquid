@@ -1,7 +1,6 @@
 {%- for line_item in cart.items -%}
   {%-assign inCart = inCart | append: line_item.product_id | append: ',' %}
 {%- endfor -%}
-InCart: {{ inCart }}
 
 {%- assign upsell_count = 0 -%}
 
