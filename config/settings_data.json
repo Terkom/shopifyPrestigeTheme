@@ -40,7 +40,9 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "50",
-    "cart_upsell_collection": "recommended",
+    "cart_upsell_1": "iced-cuban-sneaker-chain",
+    "cart_upsell_2": "heart-hoop-earrings",
+    "cart_upsell_3": "lace-tips",
     "social_facebook": "https:\/\/www.facebook.com\/lacecharms",
     "social_twitter": "",
     "social_instagram": "https:\/\/www.instagram.com\/lacecharms\/",
@@ -52,6 +54,7 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_accent_color": "#323232",
     "checkout_button_color": "#5c5c5c",
+    "cart_upsell_collection": "recommended",
     "upsell_collection": "recommended",
     "sections": {
       "sidebar-menu": {
