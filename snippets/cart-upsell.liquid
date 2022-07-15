@@ -5,13 +5,13 @@
 {%- assign upsell_count = 0 -%}
 <div class="cart_upsell">
   <h3 class="cart_upsell-heading">Frequently Bought Together</h3>
-  <div style="height: 142px">
+  <div class="Grid">
   {%- for product in settings.cart_upsell_collection.products -%}
     {%- unless inCart contains product.id or product.available == false -%}
       {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600', image: product.featured_media -%}{%- endcapture -%}
       {%- assign media_aspect_ratio = product.featured_media.aspect_ratio | default: product.featured_media.preview_image.aspect_ratio -%}
       {% assign image_url = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-      <div class="AspectRatio" style="max-width: {{ product.featured_media.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }} Grid__Cell 1/3">
+      <div class="AspectRatio Grid__Cell 1/3" style="max-width: {{ product.featured_media.preview_image.width }}px; --aspect-ratio: {{ media_aspect_ratio }}">
         <a href="{{ product.first_available_variant.url }}&utm-link=cart-us">
           <img class="Image--lazyLoad" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
           <span class="Image__Loader"></span>
