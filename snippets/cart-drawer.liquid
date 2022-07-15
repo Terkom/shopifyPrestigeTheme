@@ -48,8 +48,9 @@
         {%- for line_item in cart.items -%}
           {% assign inCart = inCart | append: line_item.product_id | append: ',' %}
         {% endfor %}
-        {{ inCart }}
+        InCart: {{ inCart }}
         {% assign upsell_count = 0 %}
+        upsell1: {{ settings.cart_upsell_1.product_id }}
         {% unless inCart contains settings.cart_upsell_1.product_id %}
           {{ settings.cart_upsell_1.product_id }}
         {% endunless %}
