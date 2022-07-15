@@ -44,8 +44,9 @@
           <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
 
           {% render 'cart-items' %}
-
-        {% for prod in settings.cart_upsell_collection.products %}
+        
+        {%- assign collection = collections[settings.cart_upsell_collection.products] -%}
+        {% for prod in collection.products %}
           Upsell: {{ prod.title }} &nbsp;
         {% endfor %}
 
