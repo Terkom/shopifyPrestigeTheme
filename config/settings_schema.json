@@ -502,9 +502,34 @@
         "default": "50"
       },
       {
-        "type": "collection",
-        "id": "cart_upsell_collection",
-        "label": "Upsell Collection"
+        "type": "product",
+        "id": "cart_upsell_1",
+        "label": "Upsell product 1"
+      },
+      {
+        "type": "product",
+        "id": "cart_upsell_2",
+        "label": "Upsell product 2"
+      },
+      {
+        "type": "product",
+        "id": "cart_upsell_3",
+        "label": "Upsell product 3"
+      },
+      {
+        "type": "product",
+        "id": "cart_upsell_4",
+        "label": "Upsell product 4"
+      },
+      {
+        "type": "product",
+        "id": "cart_upsell_5",
+        "label": "Upsell product 5"
+      },
+      {
+        "type": "product",
+        "id": "cart_upsell_6",
+        "label": "Upsell product 6"
       }
     ]
   },
