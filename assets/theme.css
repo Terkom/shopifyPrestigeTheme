@@ -6481,7 +6481,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .cart_upsell {
-  vertical-align: bottom;
+  //vertical-align: bottom;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /**
