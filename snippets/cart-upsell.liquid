@@ -1,3 +1,20 @@
+{%- capture section_settings -%}
+{
+  "enableHistoryState": true,
+  "templateSuffix": {{ product.template_suffix | json }},
+  "showInventoryQuantity": {% if inventory_block != blank %}true{% else %}false{% endif %},
+  "showSku": {{ meta_block.settings.show_sku | json }},
+  "stackProductImages": {{ section.settings.stack_images | json }},
+  "showThumbnails": {{ section.settings.show_thumbnails | json }},
+  "enableVideoLooping": {{ section.settings.enable_video_looping | json }},
+  "inventoryQuantityThreshold": {{ inventory_block.settings.inventory_quantity_threshold | default: 0 }},
+  "showPriceInButton": {{ buy_buttons_block.settings.show_price_in_button | json }},
+  "enableImageZoom": {{ section.settings.enable_image_zoom | json }},
+  "showPaymentButton": {{ buy_buttons_block.settings.show_payment_button | json }},
+  "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
+}
+
+{%- endcapture -%}
 {%- for line_item in cart.items -%}
   {%-assign inCart = inCart | append: line_item.product_id | append: ',' %}
 {%- endfor -%}
@@ -16,7 +33,6 @@
           <span class="Image__Loader"></span>
         </a>
       {%- form 'product', product, class: 'ProductForm' -%}
-
           <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
           <input type="hidden" name="quantity" value="1" />
           <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--tiny cart_upsell_button" data-action="add-to-cart">
