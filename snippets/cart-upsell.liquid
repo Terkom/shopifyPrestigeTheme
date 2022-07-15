@@ -13,7 +13,7 @@
       {% assign image_url = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
       <div style="margin: 0px 10px; width: 33.33%''">
           <a href="{{ product.first_available_variant.url }}&utm-link=cart-us">
-            <img class="Image--lazyLoad" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
+            <img class="Image--lazyLoad" style="width: 100%;" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
             <span class="Image__Loader"></span>
           </a>
         <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--tiny cart_upsell-button" data-action="add-to-cart">
