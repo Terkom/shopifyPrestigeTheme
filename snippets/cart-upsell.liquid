@@ -3,8 +3,7 @@
 {%- endfor -%}
 
 {%- assign upsell_count = 0 -%}
-<div class="">
-  <h3 class="cart_upsell-heading">Frequently Bought Together</h3>
+  <h3 class="cart_upsell-heading Grid--center">Frequently Bought Together</h3>
   <div class="cart_upsell">
   {%- for product in settings.cart_upsell_collection.products -%}
     {%- unless inCart contains product.id or product.available == false -%}
