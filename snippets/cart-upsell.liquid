@@ -11,7 +11,7 @@
       {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600', image: product.featured_media -%}{%- endcapture -%}
       {%- assign media_aspect_ratio = product.featured_media.aspect_ratio | default: product.featured_media.preview_image.aspect_ratio -%}
       {% assign image_url = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-      <div style="margin: 0px 10px;"">
+      <div style="margin: 0px 10px; width: 33.33%''">
           <a href="{{ product.first_available_variant.url }}&utm-link=cart-us">
             <img class="Image--lazyLoad" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
             <span class="Image__Loader"></span>
