@@ -1599,6 +1599,12 @@ input.spr-button-primary[disabled],
   padding: 12px 24px;
 }
 
+.Button--tiny {
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 10px));
+  padding: 2px 4px;
+}
+
+
 .Button__SeparatorDot {
   display: inline-block;
   margin: 0 18px;
