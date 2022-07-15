@@ -6467,6 +6467,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .side-cart__shipping-bar--fill {
   transition: all 0.3s;
   width: 0%;
+  max-width: 100%;
   background: var(--brand-color);
   display: block;
   height: 10px;
