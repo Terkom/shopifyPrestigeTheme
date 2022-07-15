@@ -47,11 +47,11 @@
         
         {%- assign collection = settings.cart_upsell_collection %}
           {% for prod in collection.products | limit: 3 %}
-            {% assign upsell_products = upsell_products | append: prod.handle | append: ',' %}
+            {% assign upsell_products = upsell_products | append: prod | append: ',' %}
             {{ prod.title }} <br />
           {% endfor %}
         <p>
-         {{ upsell_products }}
+        {% assign upsell_products = upsell_products | split: ',' %}
         {% for t in upsell_products %}
           {{  t.handle }} <br>
         {% endfor %}
