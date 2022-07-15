@@ -46,11 +46,14 @@
           {% render 'cart-items' %}
         
         {%- assign collection = settings.cart_upsell_collection %}
-                Title: {{ settings.cart_upsell_collection }}
-        
-        {% for prod in collection.products %}
-          Upsell: {{ prod.title }} &nbsp;
-        {% endfor %}
+          {% for prod in collection.products %}
+            {% assign upsell_products = upsell_products | append: prod | append: ',' %}
+            {{ prod.title }} <br />
+          {% endfor %}
+        <p>
+        {% for t in upsell_products.products %}
+          {{  t.handle }} <br>
+          {% endfor %}
 
         </div>
       {%- endif -%}
