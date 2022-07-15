@@ -260,11 +260,6 @@
         "id": "currency_code_enabled",
         "label": "Show currency codes",
         "default": false
-      },
-      {
-        "type": "collection",
-        "id": "upsell_collection",
-        "label": "Upsell Collection"
       }
     ]
   },
@@ -505,6 +500,11 @@
         "label": "Free shipping minimum amount",
         "info": "Only write a number, no letters",
         "default": "50"
+      },
+      {
+        "type": "collection",
+        "id": "upsell_collection",
+        "label": "Upsell Collection"
       }
     ]
   },
