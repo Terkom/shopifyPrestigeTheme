@@ -502,6 +502,11 @@
         "default": "50"
       },
       {
+        "type": "collection",
+        "id": "upsell_collection",
+        "label": "Upsell Collection"
+      },
+      {
         "type": "product",
         "id": "cart_upsell_1",
         "label": "Upsell product 1"
