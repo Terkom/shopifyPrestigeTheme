@@ -15,7 +15,7 @@
           <img class="Image--lazyLoad" style="width: 100%;" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
           <span class="Image__Loader"></span>
         </a>
-      {%- form 'product', product, class: 'ProductForm' -%}
+      {% form 'product', product, class: 'ProductForm' %}
         {%- render 'product-data', product: product -%}
           <!-- <input type="hidden" name="id" value="{{ product.first_available_variant.id }}"> -->
           <input type="hidden" name="quantity" value="1" />
