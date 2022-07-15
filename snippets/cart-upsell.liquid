@@ -16,9 +16,10 @@
           <span class="Image__Loader"></span>
         </a>
       {%- form 'product', product, class: 'ProductForm' -%}
-          <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+        {%- render 'product-data', product: product -%}
+          <!-- <input type="hidden" name="id" value="{{ product.first_available_variant.id }}"> -->
           <input type="hidden" name="quantity" value="1" />
-          <button type="button" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--tiny cart_upsell_button" data-action="add-to-cart">
+          <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--tiny cart_upsell_button" data-action="add-to-cart">
             <span>Add {{ product.first_available_variant.price | money_without_trailing_zeros }}</span>
           </button>
       {%- endform -%}
