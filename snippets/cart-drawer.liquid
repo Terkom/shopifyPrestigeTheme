@@ -50,9 +50,9 @@
         {% endfor %}
         InCart: {{ inCart }}
         {% assign upsell_count = 0 %}
-        upsell1: {{ settings.cart_upsell_1.url }}
-        {% unless inCart contains settings.cart_upsell_1.product_id %}
-          {{ settings.cart_upsell_1.product_id }}
+        upsell1: {{ settings.cart_upsell_1.id }}
+        {% unless inCart contains settings.cart_upsell_1.id %}
+          {{ settings.cart_upsell_1.id }}
         {% endunless %}
         
 
