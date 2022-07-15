@@ -6492,6 +6492,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   text-align: center;
 }
 
+.cart_upsell_button {
+  margin: 0 auto;
+}
 /**
  * ----------------------------------------------------------------------------
  * Items
