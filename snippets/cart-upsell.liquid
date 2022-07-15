@@ -5,7 +5,7 @@
 {%- assign upsell_count = 0 -%}
 <div class="cart_upsell">
   <h3 class="cart_upsell-heading">Frequently Bought Together</h3>
-  <div class="Grid">
+  <div class="Grid Grid--center">
   {%- for product in settings.cart_upsell_collection.products -%}
     {%- unless inCart contains product.id or product.available == false -%}
       {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600', image: product.featured_media -%}{%- endcapture -%}
