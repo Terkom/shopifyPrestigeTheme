@@ -44,6 +44,12 @@
           <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
 
           {% render 'cart-items' %}
+<!-- bullshit -->
+        {%- for line_item in cart.items -%}
+          {% assign inCart = inCart | append: line_item.handle | append: ',' %}
+        {% endfor %}
+        {{ inCart }}
+        {% assign upsell_count = 0 %}
         
         {%- assign collection = settings.cart_upsell_collection %}
           {% for prod in collection.products | limit: 3 %}
@@ -51,13 +57,8 @@
             {{ prod.title }} <br />
           {% endfor %}
         <p>
-        {% assign upsell_products = upsell_products | split: ',' %}
-        
-        {% for t in upsell_products %}
-            {% assign _product = all_products[t] %}
-            {{  _product }} <br>
-        {% endfor %}
 
+<!-- end bullshit -->
         </div>
       {%- endif -%}
     </div>
