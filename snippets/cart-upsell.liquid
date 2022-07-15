@@ -16,8 +16,8 @@
           <img class="Image--lazyLoad" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_media.alt | escape }}">
           <span class="Image__Loader"></span>
         </a>
-        <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary" data-action="add-to-cart">
-          <span class="cart_upsell-button">Add {{ product.first_available_variant.price | money_without_trailing_zeros }}</span>
+        <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary cart_upsell-button" data-action="add-to-cart">
+          <span>Add {{ product.first_available_variant.price | money_without_trailing_zeros }}</span>
         </button>
       </div>
       {%- assign upsell_count = upsell_count | plus: 1 -%}
