@@ -40,6 +40,7 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "50",
+    "upsell_collection": "recommended",
     "social_facebook": "https:\/\/www.facebook.com\/lacecharms",
     "social_twitter": "",
     "social_instagram": "https:\/\/www.instagram.com\/lacecharms\/",
