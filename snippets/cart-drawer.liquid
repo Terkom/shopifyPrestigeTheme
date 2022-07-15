@@ -45,7 +45,9 @@
 
           {% render 'cart-items' %}
         
-        {%- assign collection = collections[settings.cart_upsell_collection.products] -%}
+        {%- assign collection = collections[settings.cart_upsell_collection.products] %}
+                {{ collection.title }}
+        
         {% for prod in collection.products %}
           Upsell: {{ prod.title }} &nbsp;
         {% endfor %}
