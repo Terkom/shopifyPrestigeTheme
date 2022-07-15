@@ -13,7 +13,6 @@
   "showPaymentButton": {{ buy_buttons_block.settings.show_payment_button | json }},
   "useAjaxCart": {% if settings.cart_type == 'drawer' %}true{% else %}false{% endif %}
 }
-
 {%- endcapture -%}
 {%- for line_item in cart.items -%}
   {%-assign inCart = inCart | append: line_item.product_id | append: ',' %}
