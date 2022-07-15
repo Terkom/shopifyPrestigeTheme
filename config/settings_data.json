@@ -40,7 +40,7 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "50",
-    "upsell_collection": "recommended",
+    "cart_upsell_collection": "recommended",
     "social_facebook": "https:\/\/www.facebook.com\/lacecharms",
     "social_twitter": "",
     "social_instagram": "https:\/\/www.instagram.com\/lacecharms\/",
@@ -52,6 +52,7 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_accent_color": "#323232",
     "checkout_button_color": "#5c5c5c",
+    "upsell_collection": "recommended",
     "sections": {
       "sidebar-menu": {
         "type": "sidebar-menu",
