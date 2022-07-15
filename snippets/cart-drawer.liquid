@@ -44,19 +44,7 @@
           <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
 
           {% render 'cart-items' %}
-<!-- bullshit -->
-        {%- for line_item in cart.items -%}
-          {% assign inCart = inCart | append: line_item.product_id | append: ',' %}
-        {% endfor %}
-        InCart: {{ inCart }}
-        {% assign upsell_count = 0 %}
-        upsell2: {{ settings.cart_upsell_2.id }}
-        {% unless inCart contains settings.cart_upsell_2.id %}
-          {{ settings.cart_upsell_2.id }}
-        {% endunless %}
-        
-
-<!-- end bullshit -->
+          {% render 'cart-upsell' %}
         </div>
       {%- endif -%}
     </div>
