@@ -2591,6 +2591,7 @@
         var _this4 = this;
 
         if (!this.options['useAjaxCart']) {
+          console.log("thinks useAjaxCart is not true"); 
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
 
