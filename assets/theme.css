@@ -6480,6 +6480,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   border-radius: 5px;
 }
 
+.cart_upsell {
+  vertical-align: bottom;
+}
 
 /**
  * ----------------------------------------------------------------------------
