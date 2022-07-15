@@ -50,13 +50,10 @@
         {% endfor %}
         {{ inCart }}
         {% assign upsell_count = 0 %}
+        {% unless inCart contains settings.cart_upsell_1.product_id %}
+          {{ settings.cart_upsell_1.product_id }}
+        {% endunless %}
         
-        {%- assign collection = settings.cart_upsell_collection %}
-          {% for prod in collection.products | limit: 3 %}
-            {% assign upsell_products = upsell_products | append: prod | append: ',' %}
-            {{ prod.title }} <br />
-          {% endfor %}
-        <p>
 
 <!-- end bullshit -->
         </div>
