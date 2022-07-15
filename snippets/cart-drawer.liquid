@@ -46,7 +46,7 @@
           {% render 'cart-items' %}
 <!-- bullshit -->
         {%- for line_item in cart.items -%}
-          {% assign inCart = inCart | append: line_item.handle | append: ',' %}
+          {% assign inCart = inCart | append: line_item.url | append: ',' %}
         {% endfor %}
         {{ inCart }}
         {% assign upsell_count = 0 %}
