@@ -7029,7 +7029,7 @@
 
 function uAddToCart(id) {
   event.preventDefault(); // Prevent form to be submitted
-
+  console.log(this.element)
   let formElement = {
    'items': [{
     'id': id,
@@ -7059,8 +7059,9 @@ function uAddToCart(id) {
         }
       }));
     } else {
-      return;
-      }
+      response.json().then(function (content) {
+        console.log(content)
+      });
     }
   });
 }
