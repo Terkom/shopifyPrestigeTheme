@@ -14,7 +14,8 @@
 
   <h1 class="ProductMeta__Title Heading u-h2">
     {%- if template.name == 'product' -%}
-      {{- product.title -}}       Rating: {{ product.metafields.reviews.rating.value }}
+      {{- product.title -}}       Rating: 
+{{ product.metafields.stamped.reviews_average | round:2 }} }}
     {%- else -%}
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
