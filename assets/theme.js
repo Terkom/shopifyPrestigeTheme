@@ -2589,7 +2589,7 @@
       key: "_addToCart",
       value: function _addToCart(event) {
         var _this4 = this;
-        console.log(this);
+
         if (!this.options['useAjaxCart']) {
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
@@ -7021,20 +7021,28 @@
 
 })));
 
-
-
+/*******
+ *
+ * Custom add to cart for upsell
+ *
+ *******/
 
 function uAddToCart(id) {
   event.preventDefault(); // Prevent form to be submitted
 
-  var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
-
-  addToCartButton.setAttribute('disabled', 'disabled');
+  let formElement = {
+   'items': [{
+    'id': id,
+    'quantity': 1
+    }]
+  };
+  console.log(formElement)
   document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
 
-  var formElement = this.element.querySelector('form[action*="/cart/add"]');
+  //fetch(window.Shopify.routes.root + 'cart/add.js', {
+  
   fetch("".concat(window.routes.cartAddUrl, ".js"), {
-    body: JSON.stringify(Form.serialize(formElement)),
+    body: JSON.stringify(formElement),
     credentials: 'same-origin',
     method: 'POST',
     headers: {
