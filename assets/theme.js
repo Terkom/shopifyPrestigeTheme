@@ -7036,10 +7036,8 @@ function uAddToCart(id) {
     'quantity': 1
     }]
   };
-  console.log(formElement)
-  document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
 
-  //fetch(window.Shopify.routes.root + 'cart/add.js', {
+  document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
   
   fetch("".concat(window.routes.cartAddUrl, ".js"), {
     body: JSON.stringify(formElement),
