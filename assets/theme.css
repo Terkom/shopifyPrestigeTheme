@@ -9052,6 +9052,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Product__Wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 641px) {
