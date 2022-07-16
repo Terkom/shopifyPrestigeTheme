@@ -1,6 +1,6 @@
 {%- if  product.metafields.stamped.reviews_average != blank -%}
   {%- assign rating_decimal = 0 -%}
-  {%- assign decimal = product.metafields.stamped.reviews_average | modulo: 1 -%}
+  {%- assign decimal = product.metafields.stamped.reviews_average | round: 2 | modulo: 1 -%}
 
   {%- if decimal >= 0.3 and decimal <= 0.7 -%}
     {%- assign rating_decimal = 0.5 -%}
