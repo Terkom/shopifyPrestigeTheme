@@ -7028,7 +7028,7 @@
  *******/
 
 function uAddToCart(id) {
-  //event.preventDefault(); // Prevent form to be submitted
+  event.preventDefault(); // Prevent form to be submitted
 
   let formElement = {
    'items': [{
@@ -7063,5 +7063,4 @@ function uAddToCart(id) {
       });
     }
   });
-  //event.preventDefault();
 }
