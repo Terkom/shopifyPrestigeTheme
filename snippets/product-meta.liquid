@@ -22,6 +22,7 @@
 
   {%- if block.settings.show_product_rating -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
+      {{ product.metafields.reviews.rating.value }}
       {%- render 'product-rating', product: product -%}
     </div>
   {%- endif -%}
