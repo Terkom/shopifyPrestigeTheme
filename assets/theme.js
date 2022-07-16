@@ -7057,8 +7057,7 @@ function uAddToCart(id) {
     document.dispatchEvent(new CustomEvent('theme:loading:end'));
     
     if (response.ok) {
-      var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'),
-      addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
+      //addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
       console.log("ok")
     } else {
       response.json().then(function (content) {
