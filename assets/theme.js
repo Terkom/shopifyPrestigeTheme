@@ -7037,6 +7037,9 @@ function uAddToCart(id) {
     }]
   };
 
+  var _this4 = this;
+  var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
+
   document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
   
   fetch("".concat(window.routes.cartAddUrl, ".js"), {
