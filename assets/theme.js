@@ -7029,7 +7029,7 @@
 
 function uAddToCart(id) {
   event.preventDefault(); // Prevent form to be submitted
-  console.log(this.element)
+
   let formElement = {
    'items': [{
     'id': id,
@@ -7050,8 +7050,7 @@ function uAddToCart(id) {
     document.dispatchEvent(new CustomEvent('theme:loading:end'));
     
     if (response.ok) {
-      //addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
-      console.log("ok")
+      // refresh the cart
       document.dispatchEvent(new CustomEvent('product:added', {
         bubbles: true,
         detail: {
@@ -7060,8 +7059,7 @@ function uAddToCart(id) {
         }
       }));
     } else {
-      response.json().then(function (content) {
-        console.log(content)
+      return;
       });
     }
   });
