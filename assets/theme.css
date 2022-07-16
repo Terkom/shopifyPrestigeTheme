@@ -6494,6 +6494,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .cart_upsell_button {
   // margin: 0 auto;
+  margin-top: 4px;
   width: 100%;
   letter-spacing: 0.1em;
 }
