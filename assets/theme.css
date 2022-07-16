@@ -9142,10 +9142,17 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .Product__SlideshowNav {
-  //display: none;
+  // display: none;
   display: flex;
   flex-wrap: wrap;
 }
+
+  .Product__Gallery--withThumbnails .Product__SlideshowNav--dots {
+    display: none;
+  }
+  .Product__Gallery--withThumbnails .Product__SlideshowNav--thumbnails {
+    display: block;
+  }
 
 .Product__SlideshowNavBadge {
   position: absolute;
