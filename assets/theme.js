@@ -2589,7 +2589,7 @@
       key: "_addToCart",
       value: function _addToCart(event) {
         var _this4 = this;
-        console.log(event)
+
         if (!this.options['useAjaxCart']) {
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
