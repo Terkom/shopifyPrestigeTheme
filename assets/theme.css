@@ -9173,15 +9173,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   vertical-align: middle;
 }
 
-// ALWAYS SHOW THUMBNAILS -MJS
-.Product__Gallery--withThumbnails .Product__SlideshowNav--dots {
-  display: none;
-}
-.Product__Gallery--withThumbnails .Product__SlideshowNav--thumbnails {
-  display: block;
-}
-// ALWAYS SHOW THUMBNAILS
-
 .Product__SlideshowNavArrow {
   position: relative;
   /* This is used to increase the clickable area */
