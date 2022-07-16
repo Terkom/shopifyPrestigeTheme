@@ -7052,30 +7052,16 @@ function uAddToCart(id) {
     }
   }).then(function (response) {
     document.dispatchEvent(new CustomEvent('theme:loading:end'));
-    var quantityElement = formElement.querySelector('[name="quantity"]');
-
+    
     if (response.ok) {
       addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
+      console.log("ok")
 
-      _this4.element.dispatchEvent(new CustomEvent('product:added', {
-        bubbles: true,
-        detail: {
-          variant: _this4.currentVariant,
-          quantity: quantityElement ? parseInt(quantityElement.value) : 1
-        }
-      }));
     } else {
       response.json().then(function (content) {
-        var errorMessageElement = document.createElement('span');
-        errorMessageElement.className = 'ProductForm__Error Alert Alert--error';
-        errorMessageElement.innerHTML = content['description'];
-        addToCartButton.removeAttribute('disabled');
-        addToCartButton.insertAdjacentElement('afterend', errorMessageElement);
-        setTimeout(function () {
-          errorMessageElement.remove();
-        }, 2500);
+        console.log(content)
       });
     }
   });
-  event.preventDefault();
+  //event.preventDefault();
 }
