@@ -7029,7 +7029,7 @@
 
 function uAddToCart(id) {
   event.preventDefault(); // Prevent form to be submitted
-  console.log(this)
+  console.log(this.element)
   let formElement = {
    'items': [{
     'id': id,
@@ -7039,8 +7039,8 @@ function uAddToCart(id) {
 
   var _this4 = this;
   
-  var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
-  addToCartButton.setAttribute('disabled', 'disabled');
+  //var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
+  //addToCartButton.setAttribute('disabled', 'disabled');
   
   document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
   
