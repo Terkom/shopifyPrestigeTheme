@@ -7060,7 +7060,7 @@ function uAddToCart(id) {
       }));
     } else {
       return;
-      });
+      }
     }
   });
 }
