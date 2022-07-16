@@ -9,19 +9,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "f8fd52f3-e9a7-4a27-a16b-77f5aa860d2b": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "use_metafields": true,
-            "sku_tagtype": "sku"
-          }
-        },
         "product_meta": {
           "type": "product_meta",
           "settings": {
             "show_vendor": false,
             "show_sku": false,
-            "show_product_rating": false,
+            "show_product_rating": true,
             "show_taxes_included": false
           }
         },
@@ -66,7 +59,6 @@
         }
       },
       "block_order": [
-        "f8fd52f3-e9a7-4a27-a16b-77f5aa860d2b",
         "product_meta",
         "variant_selector",
         "quantity_selector",
