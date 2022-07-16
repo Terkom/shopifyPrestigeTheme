@@ -2589,7 +2589,7 @@
       key: "_addToCart",
       value: function _addToCart(event) {
         var _this4 = this;
-
+        console.log(this);
         if (!this.options['useAjaxCart']) {
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
@@ -7020,3 +7020,54 @@
   })();
 
 })));
+
+
+
+
+function uAddToCart(id) {
+  event.preventDefault(); // Prevent form to be submitted
+
+  var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
+
+  addToCartButton.setAttribute('disabled', 'disabled');
+  document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
+
+  var formElement = this.element.querySelector('form[action*="/cart/add"]');
+  fetch("".concat(window.routes.cartAddUrl, ".js"), {
+    body: JSON.stringify(Form.serialize(formElement)),
+    credentials: 'same-origin',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Requested-With': 'XMLHttpRequest' // This is needed as currently there is a bug in Shopify that assumes this header
+
+    }
+  }).then(function (response) {
+    document.dispatchEvent(new CustomEvent('theme:loading:end'));
+    var quantityElement = formElement.querySelector('[name="quantity"]');
+
+    if (response.ok) {
+      addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
+
+      _this4.element.dispatchEvent(new CustomEvent('product:added', {
+        bubbles: true,
+        detail: {
+          variant: _this4.currentVariant,
+          quantity: quantityElement ? parseInt(quantityElement.value) : 1
+        }
+      }));
+    } else {
+      response.json().then(function (content) {
+        var errorMessageElement = document.createElement('span');
+        errorMessageElement.className = 'ProductForm__Error Alert Alert--error';
+        errorMessageElement.innerHTML = content['description'];
+        addToCartButton.removeAttribute('disabled');
+        addToCartButton.insertAdjacentElement('afterend', errorMessageElement);
+        setTimeout(function () {
+          errorMessageElement.remove();
+        }, 2500);
+      });
+    }
+  });
+  event.preventDefault();
+}
