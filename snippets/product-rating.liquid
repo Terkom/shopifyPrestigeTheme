@@ -29,7 +29,7 @@
       {%- endfor -%}
     </div>
 
-    <span class="rating__caption">{{ 'product.general.reviews_count' | t: count: product.metafields.reviews.rating_count.value }}</span>
+    <span class="rating__caption">{{ 'product.general.reviews_count' | t: count: product.metafields.stamped.reviews_count }}</span>
   </div>
 {%- else -%}
   <div class="rating">
