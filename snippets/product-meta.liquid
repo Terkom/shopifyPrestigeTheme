@@ -73,5 +73,7 @@
     {%- endif -%}
   {%- endif -%}
 
-  {{- form | payment_terms -}}
+  {%- comment -%} Shop Pay installments message disabled
+    {{- form | payment_terms -}}
+  {%- endcomment -%}
 </div>
