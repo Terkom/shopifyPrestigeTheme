@@ -7037,13 +7037,6 @@ function uAddToCart(id) {
     }]
   };
 
-  var _this4 = this;
-  
-  //var addToCartButton = this.element.querySelector('.ProductForm__AddToCart'); // First, we switch the status of the button
-  //addToCartButton.setAttribute('disabled', 'disabled');
-  
-  document.dispatchEvent(new CustomEvent('theme:loading:start')); // Then we add the product in Ajax
-  
   fetch("".concat(window.routes.cartAddUrl, ".js"), {
     body: JSON.stringify(formElement),
     credentials: 'same-origin',
@@ -7059,6 +7052,13 @@ function uAddToCart(id) {
     if (response.ok) {
       //addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
       console.log("ok")
+      dispatchEvent(new CustomEvent('product:added', {
+        bubbles: true,
+        detail: {
+          variant: id,
+          quantity: 1
+        }
+      }));
     } else {
       response.json().then(function (content) {
         console.log(content)
