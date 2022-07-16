@@ -7052,7 +7052,7 @@ function uAddToCart(id) {
     if (response.ok) {
       //addToCartButton.removeAttribute('disabled'); // We simply trigger an event so the mini-cart can re-render
       console.log("ok")
-      dispatchEvent(new CustomEvent('product:added', {
+      document.dispatchEvent(new CustomEvent('product:added', {
         bubbles: true,
         detail: {
           variant: id,
