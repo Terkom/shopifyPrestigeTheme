@@ -9091,6 +9091,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Product__Gallery {
   position: relative;
   margin-bottom: 28px;
+  width: 60%;
 }
 
 .Product__ViewInSpace {
@@ -9390,6 +9391,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Product__Info--noGallery {
   padding-top: 24px;
+}
+
+.Product__InfoWrapper {
+  width: 40%;
 }
 
 @media screen and (min-width: 641px) {
