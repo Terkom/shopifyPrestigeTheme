@@ -1,3 +1,5 @@
+{%- comment -%} MODIFIED ORIGINAL FOR USE WITH STAMPED.IO METAFIELDS {%- endcomment -%}
+
 {%- if  product.metafields.stamped.reviews_average != blank -%}
   {%- assign rating_decimal = 0 -%}
   {%- assign decimal = product.metafields.stamped.reviews_average | round: 2 -%}
