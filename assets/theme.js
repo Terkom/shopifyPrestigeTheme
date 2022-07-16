@@ -7029,7 +7029,7 @@
 
 function uAddToCart(id) {
   event.preventDefault(); // Prevent form to be submitted
-
+  console.log(this)
   let formElement = {
    'items': [{
     'id': id,
