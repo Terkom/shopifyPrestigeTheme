@@ -9050,6 +9050,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   max-width: none;
 }
 
+.Product__Wrapper {
+  display: flex;
+}
+
 @media screen and (min-width: 641px) {
   .Product {
     margin-bottom: 80px;
