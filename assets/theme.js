@@ -1545,7 +1545,7 @@
             // For browser that supports srcset, currentSrc is the currently used image
             w: requestedWidth,
             h: requestedHeight,
-            initialZoomLevel: 0,
+            initialZoomLevel: "fit",
             src: Image.getSizedImageUrl(image.getAttribute('data-original-src'), requestedWidth + 'x' + requestedHeight)
           };
         });
