@@ -1509,10 +1509,10 @@
     }, {
       key: "_initPhotoSwipeFromImageClick",
       value: function _initPhotoSwipeFromImageClick(event, target) {
-        // Opening this way is only available on desktop
-        if (Responsive.matchesBreakpoint('pocket')) {
-          return;
-        }
+        // Opening this way is only available on desktop [DISABLED -MJS]
+        // if (Responsive.matchesBreakpoint('pocket')) {
+        //  return;
+        //}
 
         var images = Dom.nodeListToArray(this.element.querySelectorAll('.Product__SlideItem--image img'));
 
