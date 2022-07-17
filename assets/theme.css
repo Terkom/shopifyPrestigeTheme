@@ -1979,7 +1979,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   overflow: hidden;
   position: relative;
   height: auto;
-  max-height: 300px;
 }
 
 .flickity-slider {
