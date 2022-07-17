@@ -90,7 +90,7 @@
 
         {%- case media.media_type -%}
           {%- when 'image' -%}
-            {{ product.selected_variant.image.height }}
+            <-- {{ product.selected_variant.image.height }} -->
             {%- if product.selected_variant.image.height > media.width -%}
               {%- assign pillarboxing = 1 | minus: media.aspect_ratio | times: 300 | round -%} <!-- Pillar: {{ media.height }} / {{ media.width }} / {{ media.aspect_ratio }} / {{ pillarboxing }} {{ media.link }}-->
             {%- endif -%}
