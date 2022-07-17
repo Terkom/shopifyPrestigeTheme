@@ -1546,7 +1546,7 @@
             w: requestedWidth,
             h: requestedHeight,
             //initialZoomLevel: 0.65,
-            initialZoomLevel: 1,
+            initialZoomLevel: 0.1,
             src: Image.getSizedImageUrl(image.getAttribute('data-original-src'), requestedWidth + 'x' + requestedHeight)
           };
         });
