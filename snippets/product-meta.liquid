@@ -22,7 +22,9 @@
 
   {%- if block.settings.show_product_rating -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
-      {%- render 'product-rating', product: product -%}
+      <a href="#stamped-main-widget">
+        {%- render 'product-rating', product: product -%}
+      </a>
     </div>
   {%- endif -%}
 
