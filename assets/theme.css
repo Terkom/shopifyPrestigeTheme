@@ -9626,6 +9626,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .ProductMeta__Title {
   margin-bottom: 0;
   line-height: 1.1;
+  text-align: center;
 }
 
 .ProductMeta__PriceList {
