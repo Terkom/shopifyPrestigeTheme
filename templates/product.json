@@ -29,6 +29,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
             "show_label": false
           }
@@ -47,6 +48,7 @@
         },
         "share_buttons": {
           "type": "share_buttons",
+          "disabled": true,
           "settings": {
           }
         },
