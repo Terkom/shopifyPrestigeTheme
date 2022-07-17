@@ -9608,10 +9608,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  * ----------------------------------------------------------------------------
  */
 .ProductMeta {
-  text-align: left;
+  text-align: center;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
+  line-height: 1.1;
 }
 
 .ProductMeta__ImageWrapper {
@@ -9625,8 +9626,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ProductMeta__Title {
   margin-bottom: 0;
-  line-height: 1.1;
-  text-align: center;
 }
 
 .ProductMeta__PriceList {
