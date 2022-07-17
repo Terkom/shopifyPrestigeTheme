@@ -457,13 +457,13 @@ This is the root container for the zoom functionality. Must not be removed, as o
 {%- if section.settings.enable_image_zoom -%}
   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <!-- Background of PhotoSwipe -->
-    <div class="pswp__bg"></div>
+    <div class="pswp__bg pswp__button--close"></div>
 
     <!-- Slides wrapper with overflow:hidden. -->
     <div class="pswp__scroll-wrap">
 
       <!-- Container that holds slides. Do not remove as content is dynamically added -->
-      <div class="pswp__container">
+      <div class="pswp__container pswp__button--close">
         <div class="pswp__item"></div>
         <div class="pswp__item"></div>
         <div class="pswp__item"></div>
