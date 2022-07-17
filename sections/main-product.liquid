@@ -218,7 +218,6 @@
           </button>
         {%- endif -%}
 
-{%- comment -%} DISABLED MOBILE DOTS NAV
         {%- if media_count > 1 -%}
           {%- comment -%}
             IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
@@ -242,7 +241,6 @@
             </button>
           </div>
         {%- endif -%}
-{%- endcomment  -%}
         
         {%- unless section.settings.stack_images -%}
           {{- slideshow_nav -}}
