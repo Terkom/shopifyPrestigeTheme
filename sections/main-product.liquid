@@ -329,12 +329,14 @@
                 {%- when 'variant_selector' -%}
                   {%- assign has_ouputted_variant_selector = true -%}
                   {%- render 'product-form', block: block, product: product -%}
-                  <p class="product-single__swatch__title">
+
+                {%- when 'key_detais' -%}                
+                  <p>
                     <span style="color: #2e8539">In Stock</span>
                     <br>Ships next business day
                   </p>
   
-                  <p class="product-single__swatch__title">
+                  <p>
                     {% if product.type == 'Bundle' %}
                       &#10157; Set of 12 charms
                     {% elsif product.type == 'Pair' %}
@@ -507,7 +509,12 @@ This is the root container for the zoom functionality. Must not be removed, as o
   "name": "Product page",
   "class": "shopify-section--bordered",
   "blocks": [
-    {
+      {
+      "type": "key_details",
+      "name": "Key details",
+      "limit": 1
+      },
+      {
       "type": "product_meta",
       "name": "Product meta",
       "limit": 1,
