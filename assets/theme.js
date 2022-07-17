@@ -1514,10 +1514,10 @@
         //  return;
         //}
         
-console.log("image clicked to zoom")
+console.log("image clicked to zoom");
                     
         var images = Dom.nodeListToArray(this.element.querySelectorAll('.Product__SlideItem--image img'));
-console.log(Dom.nodeListToArray(this.element.querySelectorAll('.Product__SlideItem--image img')))
+console.log(images);
         this._createPhotoSwipeInstance(this._createPhotoSwipeItemsFromImages(images), parseInt(target.getAttribute('data-image-media-position')));
       }
       /**
