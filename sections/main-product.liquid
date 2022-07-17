@@ -42,11 +42,13 @@
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
+      {%- comment -%} DISABLED mobile zoom control buttons -MJS
       {%- if section.settings.enable_image_zoom -%}
         <div class="Product__ActionItem hidden-lap-and-up">
           <button class="RoundButton RoundButton--small RoundButton--flat" aria-label="{{ 'product.slideshow.zoom' | t | escape }}" data-action="open-product-zoom">{% render 'icon' with 'plus' %}</button>
         </div>
       {%- endif -%}
+      {%- endcomment -%}
 
       {%- if share_buttons_block != blank -%}
         <div class="Product__ActionItem hidden-lap-and-up">
