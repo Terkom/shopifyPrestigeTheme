@@ -92,7 +92,8 @@
           {%- when 'image' -%}
           
           {%- if media.image.height > media.image.width -%}
-            {%- assign pillarboxing = 1 | minus: media.image.aspect_ratio | divided_by: 1.25 | round -%}
+            {%- assign ratiodiff = media.image.aspect_ratio | divided_by: 1.25 -%}
+            {%- assign pillarbox = 1 | minus: ratiodiff -%}
           {%- endif -%}
 
             <div id="Media{{ media.id }}" tabindex="0" class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}" data-media-type="image" data-media-id="{{ media.id }}" data-media-position="{{ media.position }}" data-image-media-position="{% increment image_position %}">
