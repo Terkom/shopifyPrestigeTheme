@@ -27,8 +27,4 @@ something that is displayed on the screen.
   {%- assign supported_sizes = image.width -%}
 {%- endif -%}
 
-{%- if image.height > image.width -%}
-  {%- assign pillarboxing = 1 | minus: image.aspect_ratio | times: 300 | round -%} <!-- Pillar: {{ image.height }} / {{ image.width }} / {{ image.aspect_ratio }} / {{ pillarboxing }} -->
-{%- endif -%}
-
 {{- supported_sizes | split: ',' | compact | join: ',' -}}
