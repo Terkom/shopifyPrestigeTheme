@@ -1646,7 +1646,7 @@
           if (event.target.classList.contains('pswp__img')) {
             // this.photoSwipeInstance.toggleDesktopZoom(event.detail.releasePoint);
             // exit zoom on any tap -MJS
-            this.photoSwipeInstance.close();
+            return;
           }
         } else {
           if (event.target.classList.contains('pswp__button')) {
