@@ -58,6 +58,13 @@
             "product": "{{ product.metafields.custom.cross_promoted_product.value }}",
             "title": "Pair it with"
           }
+        },
+        "13f7b6d5-5d60-40aa-8097-cd5ec9fd7194": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "use_metafields": true,
+            "sku_tagtype": "sku"
+          }
         }
       },
       "block_order": [
@@ -67,7 +74,8 @@
         "buy_buttons",
         "description",
         "share_buttons",
-        "487620e0-d458-48a1-8c1f-43587657e53d"
+        "487620e0-d458-48a1-8c1f-43587657e53d",
+        "13f7b6d5-5d60-40aa-8097-cd5ec9fd7194"
       ],
       "settings": {
         "image_size": "small",
