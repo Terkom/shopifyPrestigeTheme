@@ -1511,6 +1511,7 @@
       value: function _initPhotoSwipeFromImageClick(event, target) {
         // Opening this way is only available on desktop
         if (Responsive.matchesBreakpoint('pocket')) {
+          console.log("image clicked to zoom, blocked for mobile")
           return;
         }
 
