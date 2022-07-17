@@ -27,11 +27,9 @@
             "size_chart": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
+        "dadadb73-3c29-44d1-92cb-5186449a041e": {
+          "type": "key_details",
           "settings": {
-            "show_label": false
           }
         },
         "buy_buttons": {
@@ -63,7 +61,7 @@
       "block_order": [
         "product_meta",
         "variant_selector",
-        "quantity_selector",
+        "dadadb73-3c29-44d1-92cb-5186449a041e",
         "buy_buttons",
         "description",
         "share_buttons",
@@ -71,6 +69,7 @@
       ],
       "settings": {
         "image_size": "small",
+        "pillarbox_enabled": true,
         "stack_images": false,
         "show_thumbnails": true,
         "enable_image_zoom": true,
