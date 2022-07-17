@@ -1645,7 +1645,8 @@
         if (!event.detail || event.detail.pointerType === 'mouse') {
           if (event.target.classList.contains('pswp__img')) {
             // this.photoSwipeInstance.toggleDesktopZoom(event.detail.releasePoint);
-            return; // exit zoom on any tap -MJS
+            this.delegateRoot.off('pswpTap');
+            this.photoSwipeInstance = null; // exit zoom on any tap -MJS
           }
         } else {
           if (event.target.classList.contains('pswp__button')) {
