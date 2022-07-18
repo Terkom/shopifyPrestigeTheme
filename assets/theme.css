@@ -2084,7 +2084,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   display: inline-block;
   width: 45px;
   overflow: clip;
-  border-radius: 10%;
   cursor: pointer;
   padding: 2px;
 }
