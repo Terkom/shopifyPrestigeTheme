@@ -18,7 +18,7 @@
       amount = {{product.selected_or_first_available_variant.price | json}};
       priceSelector= ".Price"
       currentObserver.observerTarget = ".ProductMeta__PriceList";
-      currentObserver.targetPriceSelector = ".Price";
+      currentObserver.targetPriceSelector = ".ProductMeta__Price";
       const apConfig = {
           afterpayLogoColor, priceSelector, locale, amount, showUpperLimit,
          minMaxThreshold:{min: 1000, max: 100000}, giftCard: hideAfterpay,
