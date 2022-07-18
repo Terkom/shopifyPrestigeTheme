@@ -2083,7 +2083,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   position: relative;
   display: inline-block;
   width: 45px;
-  height: 45px;
   overflow: clip;
   margin: 0 2px;
   border-radius: 10%;
