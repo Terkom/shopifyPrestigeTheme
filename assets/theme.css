@@ -2072,26 +2072,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 
 /* ---- mobile thumbnail nav ---- */
 
-.flickity-page-dots .thumb-style {
-
-  // transition: color 0.2s ease-in-out, background 0.2s ease-in-out; /* This is used to increase the clickable area */
-}
-
-.flickity-page-dots .thumb-style::before {
-  position: absolute;
-  content: "";
-  top: -6px;
-  right: -6px;
-  left: -6px;
-  bottom: -6px;
-}
-
-.flickity-page-dots .thumb-style.is-selected {
-  background: currentColor;
-  border-color: currentColor;
-}
-
-
 .flickity-nav-thumbs {
   margin-top: 12px;
   width: 100%;
@@ -2108,7 +2088,17 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   cursor: pointer;
   border: 1px solid var(--border-color);
 }
-
+.Product__MobileNavThumb::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  right: -6px;
+  left: -6px;
+  bottom: -6px;
+}
+.Product__MobileNavThumb.is-selected {
+  border: 1px solid var(--brand-color);
+}
 /**
  * ----------------------------------------------------------------------------------------------
  * Default styling for site-wide carousel
