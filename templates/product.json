@@ -24,6 +24,7 @@
             "selector_mode": "block",
             "show_color_swatch": true,
             "show_color_carousel": false,
+            "hide_single_options": true,
             "size_chart": ""
           }
         },
