@@ -2104,6 +2104,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   padding-top: 12px;
 }
 .Product__MobileNavThumb {
+  margin-left: 4px;
   width: 45px;
   height: 45px;
 }
