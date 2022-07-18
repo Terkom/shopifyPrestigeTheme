@@ -306,6 +306,9 @@
                 {%- when 'product_meta' -%}
                   {%- render 'product-meta', form: form, block: block, product: product -%}
 
+                {%- when 'product_meta_mobile' -%}
+                  {%- render 'product-meta-mobile', form: form, block: block, product: product -%}
+
                 {%- when 'description' -%}
                   {%- if product.description != blank -%}
                     <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
@@ -521,6 +524,38 @@ This is the root container for the zoom functionality. Must not be removed, as o
       {
       "type": "product_meta",
       "name": "Product meta",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_vendor",
+          "label": "Show vendor",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sku",
+          "label": "Show SKU",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_product_rating",
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_taxes_included",
+          "label": "Show price taxes notice",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "product_meta_mobile",
+      "name": "Product meta (mobile)",
       "limit": 1,
       "settings": [
         {
