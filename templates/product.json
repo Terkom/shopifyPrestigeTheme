@@ -22,8 +22,8 @@
           "type": "variant_selector",
           "settings": {
             "selector_mode": "block",
-            "show_color_swatch": true,
-            "show_color_carousel": false,
+            "show_color_swatch": false,
+            "show_color_carousel": true,
             "hide_single_options": true,
             "size_chart": ""
           }
