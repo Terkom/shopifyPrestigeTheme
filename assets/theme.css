@@ -11426,16 +11426,12 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
-
 .afterpay-paragraph {
    font-size: .9rem;
 }
 .afterpay-link {
-  //display: none;
+  display: none;
 }
 .afterpay-logo {
   width: 75px !important;
-}
-.afterpay-link-inner {
-  content: ⓘ;
 }
