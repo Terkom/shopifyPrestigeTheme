@@ -2073,7 +2073,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 /* ---- mobile thumbnail nav ---- */
 
 .flickity-nav-thumbs {
-  margin-top: 12px;
+  margin: 12px 24px;
   width: 100%;
   text-align: center;
 }
