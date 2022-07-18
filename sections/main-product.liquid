@@ -254,15 +254,18 @@
               {% render 'icon' with 'media-arrow-left' %}
             </button>
 
-            <div class="flickity-page-dots" data-flickity-config='{{ mobile_nav_flickity_options }}'>
+            <div class="flickity-nav-thumbs" data-flickity-config='{{ mobile_nav_flickity_options }}'>
               {%- for media in product.media -%}
-                <a data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio dot thumb-style {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                <a data-media-id="{{ media.id }}" class="AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                   <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                 </a>
               {%- endfor -%}
+            </div>
+          
+            <div class="flickity-page-dots">
               {%- comment -%} ORIGINAL DOTS NAV MOR MOBILE -MJS
                 {%- for i in (1..media_count) -%}
-                  <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot dot-style {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
+                  <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
                 {%- endfor -%}
               {%- endcomment -%}
             </div>
