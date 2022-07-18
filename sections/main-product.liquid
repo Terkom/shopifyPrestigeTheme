@@ -244,7 +244,7 @@
 
             <div class="flickity-page-dots">
               {%- for media in product.media -%}
-                <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="AspectRatio dot {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio dot {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                   <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                 </a>
               {%- endfor -%}
