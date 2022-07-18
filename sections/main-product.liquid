@@ -340,26 +340,24 @@
 
                 {%- when 'in_stock' -%}
                   {%- if product.selected_or_first_available_variant.available %}
-                    <p>
                       <span style="color: #2e8539">In Stock</span>
                       <br>Ships next business day
-                    </p>
                   {%- endif -%}
                 
                 {%- when 'how_many' -%}
-                  <p>
-                    {% if product.type == 'Bundle' %}
+                  <span>
+                    {%- if product.type == 'Bundle' -%}
                       &#10157; Set of 12 charms
-                    {% elsif product.type == 'Pair' %}
+                    {%- elsif product.type == 'Pair' -%}
                     	&#10157; Pair of two charms
-                    {% elsif product.type == 'Chain' %}
+                    {%- elsif product.type == 'Chain' -%}
                     	&#10157; Pair of two chains
-                    {% elsif product.type == 'Tips' %}
+                    {%- elsif product.type == 'Tips' -%}
                     	&#10157; Set of four tips
-                    {% elsif product.type == 'Laces' %}
+                    {%- elsif product.type == 'Laces' -%}
                     	&#10157; Pair of two shoelaces
-                    {% endif %}
-                  </p>
+                    {%- endif -%}
+                  </span>
 
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
