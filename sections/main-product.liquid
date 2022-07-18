@@ -41,9 +41,11 @@
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
-    <h1 class="ProductMeta__Title Heading u-h2 hidden-lap-and-up">
-      {{- product.title -}}
-    </h1>
+    <div class="Container">
+      <h2 class="ProductMeta__Title Heading u-h2 hidden-lap-and-up">
+        {{- product.title -}}
+      </h2>
+    </div>
     {%- capture action_list_items -%}
       {%- comment -%} DISABLED mobile zoom control buttons -MJS
       {%- if section.settings.enable_image_zoom -%}
