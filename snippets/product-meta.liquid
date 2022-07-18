@@ -1,4 +1,4 @@
-<div class="ProductMeta" {{ block.shopify_attributes }}>
+<div class="ProductMeta hidden-pocket" {{ block.shopify_attributes }}>
   {%- if block.settings.show_vendor and product.vendor != blank -%}
     <h2 class="ProductMeta__Vendor Heading u-h6">
       {%- assign vendor_handle = product.vendor | handle -%}
@@ -12,7 +12,7 @@
     </h2>
   {%- endif -%}
 
-  <h1 class="ProductMeta__Title Heading u-h2 hidden-pocket">
+  <h1 class="ProductMeta__Title Heading u-h2">
     {%- if template.name == 'product' -%}
       {{- product.title -}}
     {%- else -%}
