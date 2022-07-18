@@ -237,7 +237,7 @@
             achievable easily using Flickity options only, so we have to run our own
           {%- endcomment -%}
 
-          <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
+          <div class="Product__SlideshowMobileNav Product__SlideshowNav--thumbnails {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
             <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
               {% render 'icon' with 'media-arrow-left' %}
             </button>
