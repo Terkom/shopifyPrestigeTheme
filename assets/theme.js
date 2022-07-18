@@ -7076,6 +7076,7 @@ function uAddToCart(id) {
 
 var flktymobnav = new Flickity( '.flickity-nav-thumbs', {
   asNavFor: '.Product__Slideshow',
+  prevNextButtons: false,
   contain: true,
   pageDots: false
 });
