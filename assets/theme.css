@@ -2073,15 +2073,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 /* ---- mobile thumbnail nav ---- */
 
 .flickity-page-dots .thumb-style {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  margin: 0 6px;
-  // border-radius: 10%;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid var(--border-color);
+
   // transition: color 0.2s ease-in-out, background 0.2s ease-in-out; /* This is used to increase the clickable area */
 }
 
@@ -2101,12 +2093,20 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 
 
 .flickity-nav-thumbs {
-  padding-top: 12px;
+  margin-top: 12px;
+  width: 100%;
+  text-align: center;
 }
+
 .Product__MobileNavThumb {
-  margin-left: 4px;
-  min-width: 45px;
+  position: relative;
+  display: inline-block;
+  width: 45px;
   height: 45px;
+  margin: 0 6px;
+  // border-radius: 10%;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
 }
 
 /**
