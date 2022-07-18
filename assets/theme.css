@@ -2088,7 +2088,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   cursor: pointer;
 }
 .Product__MobileNavThumb.is-selected {
-  border: 1px solid var(--brand-color);
+  border: 1px solid var(--text-color);
   padding: 2px;
 }
 /**
