@@ -2083,7 +2083,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   position: relative;
   display: inline-block;
   width: 45px;
-  height: 45px;
+  height: 40px;
   margin: 0 2px;
   border-radius: 10%;
   cursor: pointer;
