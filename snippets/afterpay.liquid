@@ -1,19 +1,4 @@
-<script type="text/javascript">
-var afterpay_min = 10.00;            // As per your Afterpay contract.
-// var afterpay_max = 2000.00;         // As per your Afterpay contract.
-// var afterpay_cbt_enabled = false;   // As per your Afterpay contract; change to true to display Cross-Border Trade artwork (for AU/NZ).
-var afterpay_logo_theme = 'black'; // Can be 'colour', 'black' or 'white'.
-var afterpay_product_selector = '.ProductMeta__PriceList';
-var afterpay_cart_integration_enabled = true;
-var afterpay_cart_static_selector = '.AfterPay-mobile';
-var afterpay_shop_currency = {{ shop.currency | json }};
-var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
-var afterpay_shop_money_format = {{ shop.money_format | json }};
-var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
-var afterpay_theme_name = {{ theme.name | json }};
-var afterpay_product = {{ product | json }};
-var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
-var afterpay_cart_total_price = {{ product.selected_or_first_available_variant | json }};
-var afterpay_js_snippet_version = '1.0.12';
-</script>
-<script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
+      <p class="afterpay-paragraph" data-product-id="{{ product.id }}" style="margin-top: 0px; margin-bottom: 0px;">
+        <span class="afterpay-text1">or 4 interest-free payments of </span><strong class="afterpay-instalments">{{ product.selected_or_first_available_variant.price | divided_by: 4 | money }}</strong><span class="afterpay-text2"> with </span>
+          <img class="afterpay-logo" style="width: 75px; vertical-align: middle; border: 0px none;" src="https://static.afterpay.com/integration/product-page/logo-afterpay-black.png" srcset="https://static.afterpay.com/integration/product-page/logo-afterpay-black.png 1x, https://static.afterpay.com/integration/product-page/logo-afterpay-black@2x.png 2x, https://static.afterpay.com/integration/product-page/logo-afterpay-black@3x.png 3x" alt="Afterpay" width="75" height="16">        
+      </p>
