@@ -2089,14 +2089,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   cursor: pointer;
   border: 1px solid var(--border-color);
 }
-.Product__MobileNavThumb::before {
-  position: absolute;
-  content: "";
-  top: -6px;
-  right: -6px;
-  left: -6px;
-  bottom: -6px;
-}
 .Product__MobileNavThumb.is-selected {
   
   border: 3px solid var(--brand-color);
