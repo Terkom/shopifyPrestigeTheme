@@ -11434,5 +11434,5 @@ shopify-payment-terms {
   display: none;
 }
 .afterpay-logo {
-  width: 75px;
+  width: 75px !important;
 }
