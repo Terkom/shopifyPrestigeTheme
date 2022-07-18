@@ -1,0 +1,40 @@
+<!-- BEGIN AFTERPAY-PRESENT -->
+<script type="application/javascript" src="https://static-us.afterpay.com/javascript/present-afterpay.js"></script>
+<script>
+ let amount = 0, priceSelector = "", locale = 'en_US';
+ let afterpayLogoColor = "black"; // ['black', 'white', or 'color']
+ let showUpperLimit = false;
+ let currentObserver = { activated: true, isDecimalPrice: true };
+ let minMaxThreshold = { min: 1000, max: 100000 };
+ // let productPriceRange = { min: 1000, max: 100000 };
+ // above conditionals - also, add to config
+ let hideAfterpay = false;
+  
+ {%case template.name%} 
+    {%when "product"%}
+      // In product conditional
+      let type = {{product.type | json}};
+      if (type === "Gift Card") hideAfterpay = true;
+      amount = {{product.selected_or_first_available_variant.price | json}};
+      priceSelector= ".product-single__price-text"
+      currentObserver.observerTarget = ".product-single__price";
+      currentObserver.targetPriceSelector = ".product-single__price-number .money";
+      const apConfig = {
+          afterpayLogoColor, priceSelector, locale, amount, showUpperLimit,
+         minMaxThreshold:{min: 1000, max: 100000}, giftCard: hideAfterpay,
+          mutationObserver: currentObserver
+        };
+         new presentAfterpay(apConfig).init();
+  {%endcase%}
+</script>
+<style>
+  // .c-afterpay-info-modal-annotation__p{ margin-top: 3px; }
+  .afterpay-link{font-size: 12px; }
+  .afterpay-paragraph{ font-size: 14px;line-height: 22px;}
+  .disclaimer-link { font-size: 12px; }
+  .afterpay-logo {
+    width: 85px;
+    height: auto;
+  }
+</style>
+<!-- END AFTERPAY PRESENT -->
