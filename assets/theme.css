@@ -2074,6 +2074,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 
 .flickity-nav-thumbs {
   margin: 12px 24px;
+  padding-bottom: 4px;
   width: 100%;
   text-align: center;
 }
@@ -2097,6 +2098,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   bottom: -6px;
 }
 .Product__MobileNavThumb.is-selected {
+  
   border: 3px solid var(--brand-color);
 }
 /**
