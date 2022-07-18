@@ -245,7 +245,7 @@
         {%- if media_count > 1 -%}
             <div class="flickity-nav-thumbs" data-flickity-config='{{ mobile_nav_flickity_options }}'>
               {%- for media in product.media -%}
-                <div class="AspectRatio{% if forloop.index0 == initial_media_index %} is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}  data-media-id="{{ media.id }}"">
+                <div class="Product__MobileNavThumb AspectRatio{% if forloop.index0 == initial_media_index %} is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}  data-media-id="{{ media.id }}"">
                   <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                 </div>
               {%- endfor -%}
