@@ -94,7 +94,7 @@
           {%- when 'image' -%}
           
           {%- if media.image.height > media.image.width and section.settings.pillarbox_enabled == true -%}
-            {%- assign ratiodiff = media.image.aspect_ratio | divided_by: 1.25 -%}
+            {%- assign ratiodiff = media.image.aspect_ratio | divided_by: 1.5 -%}
             {%- assign pillarbox = 1.00 | minus: ratiodiff | times: 50 | round -%}
           {%- endif -%}
 
