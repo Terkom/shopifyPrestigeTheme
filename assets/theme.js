@@ -7067,4 +7067,17 @@ function uAddToCart(id) {
   });
 }
 
+/*************
+ *
+ * Initialize Flickity for mobile product thumbnail carousel nav
+ *
+ ************/
+
+
+var flktymobnav = new Flickity( '.flickity-nav-thumbs', {
+  asNavFor: '.Product__Slideshow',
+  contain: true,
+  pageDots: false
+});
+
 
