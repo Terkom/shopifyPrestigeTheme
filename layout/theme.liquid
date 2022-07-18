@@ -127,7 +127,9 @@
         };
       })();
     </script>
-
+  	{%- if template == "product" -%}
+  		{% render "afterpay" %}
+  	{%- endif -%}
     {% render 'microdata-schema' %}
   </head>
 
