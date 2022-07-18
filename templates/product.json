@@ -9,15 +9,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "product_meta": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": true,
-            "show_taxes_included": false
-          }
-        },
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
@@ -26,6 +17,15 @@
             "show_color_carousel": false,
             "hide_single_options": true,
             "size_chart": ""
+          }
+        },
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": true,
+            "show_taxes_included": false
           }
         },
         "dadadb73-3c29-44d1-92cb-5186449a041e": {
@@ -60,8 +60,8 @@
         }
       },
       "block_order": [
-        "product_meta",
         "variant_selector",
+        "product_meta",
         "dadadb73-3c29-44d1-92cb-5186449a041e",
         "buy_buttons",
         "description",
