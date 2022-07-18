@@ -243,6 +243,7 @@
             </button>
 
             <div class="flickity-page-dots">
+              {{- slideshow_nav -}}
               {%- for i in (1..media_count) -%}
                 <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
               {%- endfor -%}
