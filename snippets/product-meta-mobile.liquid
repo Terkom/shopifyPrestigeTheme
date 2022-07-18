@@ -12,13 +12,11 @@
     </h2>
   {%- endif -%}
 
-  <h1 class="ProductMeta__Title Heading u-h2 hidden-pocket">
-    {%- if template.name == 'product' -%}
-      {{- product.title -}}
-    {%- else -%}
+  {%- unless template.name == 'product' -%}
+    <h1 class="ProductMeta__Title Heading u-h2 hidden-pocket">
       <a href="{{ product.url }}">{{ product.title }}</a>
-    {%- endif -%}
-  </h1>
+    </h1>
+  {%- endunless -%}
 
   {%- if block.settings.show_product_rating -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
