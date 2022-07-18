@@ -11431,8 +11431,11 @@ shopify-payment-terms {
    font-size: .9rem;
 }
 .afterpay-link {
-  display: none;
+  //display: none;
 }
 .afterpay-logo {
   width: 75px !important;
+}
+.afterpay-link-inner {
+  content: ⓘ;
 }
