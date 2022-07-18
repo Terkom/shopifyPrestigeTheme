@@ -2075,7 +2075,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 
 .flickity-nav-thumbs {
   margin: 12px 24px;
-  padding-bottom: 4px;
   width: 100%;
   text-align: center;
 }
