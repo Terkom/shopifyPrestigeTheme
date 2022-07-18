@@ -69,7 +69,7 @@
         "487620e0-d458-48a1-8c1f-43587657e53d"
       ],
       "settings": {
-        "image_size": "small",
+        "image_size": "medium",
         "pillarbox_enabled": true,
         "stack_images": false,
         "show_thumbnails": true,
