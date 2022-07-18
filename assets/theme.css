@@ -11431,3 +11431,7 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
+
+#stamped-main-widget {
+  scroll-margin-top: 50px;
+}
