@@ -250,7 +250,7 @@
               {%- endfor -%}
               {%- comment -%} ORIGINAL DOTS NAV MOR MOBILE -MJS
                 {%- for i in (1..media_count) -%}
-                  <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
+                  <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot dot-style {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
                 {%- endfor -%}
               {%- endcomment -%}
             </div>
