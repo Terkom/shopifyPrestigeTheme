@@ -243,6 +243,15 @@
         {%- endif -%}
 
         {%- if media_count > 1 -%}
+            <div class="flickity-nav-thumbs" data-flickity-config='{{ mobile_nav_flickity_options }}'>
+              {%- for media in product.media -%}
+                <a data-media-id="{{ media.id }}" class="AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                  <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
+                </a>
+              {%- endfor -%}
+            </div>
+          
+          
           {%- comment -%}
             IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
             since the media API, Shopify requires to add arrows next to the dot. Unfortunately this layout is not
@@ -254,20 +263,10 @@
               {% render 'icon' with 'media-arrow-left' %}
             </button>
 
-            <div class="flickity-nav-thumbs" data-flickity-config='{{ mobile_nav_flickity_options }}'>
-              {%- for media in product.media -%}
-                <a data-media-id="{{ media.id }}" class="AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
-                  <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
-                </a>
-              {%- endfor -%}
-            </div>
-          
             <div class="flickity-page-dots">
-              {%- comment -%} ORIGINAL DOTS NAV MOR MOBILE -MJS
                 {%- for i in (1..media_count) -%}
                   <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
                 {%- endfor -%}
-              {%- endcomment -%}
             </div>
 
             <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
