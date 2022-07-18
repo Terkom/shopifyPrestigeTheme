@@ -47,6 +47,11 @@
           <span class="ProductMeta__Price Price u-h6">{{ product.selected_or_first_available_variant.price | money }}</span>
         {%- endif -%}
       {%- endif -%}
+      <p class="afterpay-paragraph" data-product-id="{{ product.id }}" style="margin-top: 0px; margin-bottom: 0px;">
+        <span class="afterpay-text1">or 4 interest-free payments of </span><strong class="afterpay-instalments">{{ product.selected_or_first_available_variant.price }}</strong><span class="afterpay-text2"> with </span>
+          <img class="afterpay-logo" style="vertical-align: middle; width: 75px; border: 0px none;" src="https://static.afterpay.com/integration/product-page/logo-afterpay-black.png" srcset="https://static.afterpay.com/integration/product-page/logo-afterpay-black.png 1x, https://static.afterpay.com/integration/product-page/logo-afterpay-black@2x.png 2x, https://static.afterpay.com/integration/product-page/logo-afterpay-black@3x.png 3x" alt="Afterpay" width="100" height="21"><span class="afterpay-text3">&nbsp;</span>
+          <a class="afterpay-link" href="https://www.afterpay.com/installment-agreement" target="_blank"><u class="afterpay-link-inner" style="font-size: 12px; text-decoration: underline;">ⓘ</u></a>
+      </p>
     </div>
 
     <div class="ProductMeta__UnitPriceMeasurement" style="display: {%- if product.selected_or_first_available_variant.unit_price_measurement -%}block{% else %}none{% endif %}">
