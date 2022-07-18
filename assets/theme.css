@@ -2084,12 +2084,12 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   display: inline-block;
   width: 45px;
   overflow: clip;
+  margin: 0 2px;
   cursor: pointer;
-  padding: 2px;
 }
 .Product__MobileNavThumb.is-selected {
   border: 1px solid var(--brand-color);
-  margin: 0 2px;
+  padding: 2px;
 }
 /**
  * ----------------------------------------------------------------------------------------------
