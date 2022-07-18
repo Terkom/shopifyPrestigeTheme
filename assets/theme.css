@@ -9413,7 +9413,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1008px) {
+//
+// changed from 1008 to 641 -MJS
+//
+@media screen and (min-width: 641px) {
   .Product__InfoWrapper {
     position: absolute;
     right: 0;
