@@ -2087,10 +2087,10 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   margin: 0 2px;
   border-radius: 10%;
   cursor: pointer;
-  border: 1px solid var(--border-color);
+  padding: 2px;
 }
 .Product__MobileNavThumb.is-selected {
-  border: 3px solid var(--brand-color);
+  border: 1px solid var(--brand-color);
 }
 /**
  * ----------------------------------------------------------------------------------------------
