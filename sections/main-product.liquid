@@ -234,7 +234,9 @@
           {%- capture mobile_nav_flickity_options -%}
             {
               "cellAlign": "left",
-              "contain": true
+              "contain": true,
+              "prevNextButtons": false,
+              "pageDots": false
             }
           {%- endcapture -%}
           <div class="flickity-nav-thumbs" data-flickity='{{ mobile_nav_flickity_options }}'>
