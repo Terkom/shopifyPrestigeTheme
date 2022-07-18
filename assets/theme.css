@@ -9096,7 +9096,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Product__ViewInSpace[data-shopify-xr-hidden] {
   visibility: hidden;
 }
-@media screen and (min-width: 1008px) {
+//
+// changed from 1008 to 641 -MJS
+//
+@media screen and (min-width: 641px) { 
   .Product__ViewInSpace[data-shopify-xr] {
     display: none;
   }
@@ -9200,7 +9203,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin-bottom: 65px;
   }
 }
-@media screen and (min-width: 1008px) {
+//
+// changed from 1008 to 641 -MJS
+//
+@media screen and (min-width: 641px) {
   .Product__Gallery {
     margin-top: 50px;
     margin-left: 50px;
