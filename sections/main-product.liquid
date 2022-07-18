@@ -338,11 +338,15 @@
                   {%- assign has_ouputted_variant_selector = true -%}
                   {%- render 'product-form', block: block, product: product -%}
 
-                {%- when 'key_details' -%}                
-                  <p>
-                    <span style="color: #2e8539">In Stock</span>
-                    <br>Ships next business day
-                  </p>
+                {%- when 'in_stock' -%}
+                  {%- if product.selected_or_first_available_variant.available %}
+                    <p>
+                      <span style="color: #2e8539">In Stock</span>
+                      <br>Ships next business day
+                    </p>
+                  {%- endif -%}
+                
+                {%- when 'how_many' -%}
                   <p>
                     {% if product.type == 'Bundle' %}
                       &#10157; Set of 12 charms
