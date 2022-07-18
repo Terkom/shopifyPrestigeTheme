@@ -11433,6 +11433,6 @@ shopify-payment-terms {
 }
 
 #stamped-main-widget {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: -100px;
+  margin-top: 100px;
 }
