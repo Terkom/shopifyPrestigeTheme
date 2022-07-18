@@ -9397,11 +9397,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Product__Info--noGallery {
   padding-top: 24px;
 }
-
-.Product__InfoWrapper {
-  // width: 40%;
-}
-
 @media screen and (min-width: 641px) {
   .Product__Info .Container {
     padding-left: 0;
