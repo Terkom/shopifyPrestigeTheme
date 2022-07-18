@@ -232,14 +232,6 @@
 
         {%- if media_count > 1 -%}
           {%- if section.settings.show_thumbnails -%}
-            {%- capture mobile_nav_flickity_options -%}
-              {
-                "cellAlign": "left",
-                "contain": true,
-                "prevNextButtons": false,
-                "pageDots": false
-              }
-            {%- endcapture -%}
             <div class="flickity-nav-thumbs hidden-lap-and-up">
               {%- for media in product.media -%}
                 <div class="Product__MobileNavThumb {% if forloop.index0 == initial_media_index %} is-selected{% endif %}" data-media-id="{{ media.id }}">
