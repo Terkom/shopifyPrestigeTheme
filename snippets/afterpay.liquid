@@ -16,9 +16,9 @@
       let type = {{product.type | json}};
       if (type === "Gift Card") hideAfterpay = true;
       amount = {{product.selected_or_first_available_variant.price | json}};
-      priceSelector= ".product-single__price-text"
-      currentObserver.observerTarget = ".product-single__price";
-      currentObserver.targetPriceSelector = ".product-single__price-number .money";
+      priceSelector= ".Price"
+      currentObserver.observerTarget = ".Price";
+      currentObserver.targetPriceSelector = ".Price";
       const apConfig = {
           afterpayLogoColor, priceSelector, locale, amount, showUpperLimit,
          minMaxThreshold:{min: 1000, max: 100000}, giftCard: hideAfterpay,
