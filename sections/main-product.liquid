@@ -340,12 +340,14 @@
 
                 {%- when 'in_stock' -%}
                   {%- if product.selected_or_first_available_variant.available %}
+                    <p>
                       <span style="color: #2e8539">In Stock</span>
                       <br>Ships next business day
+                    </p>
                   {%- endif -%}
                 
                 {%- when 'how_many' -%}
-                  <span>
+                  <p>
                     {%- if product.type == 'Bundle' -%}
                       &#10157; Set of 12 charms
                     {%- elsif product.type == 'Pair' -%}
@@ -357,7 +359,7 @@
                     {%- elsif product.type == 'Laces' -%}
                     	&#10157; Pair of two shoelaces
                     {%- endif -%}
-                  </span>
+                  </p>
 
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
