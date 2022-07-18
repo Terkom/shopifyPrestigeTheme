@@ -217,6 +217,18 @@
         }
         {%- endcapture -%}
 
+        {%- capture mobile_nav_flickity_options -%}
+        {
+          "prevNextButtons": false,
+          "pageDots": false,
+          "adaptiveHeight": true,
+          "watchCSS": true,
+          "dragThreshold": 8,
+          "initialIndex": {{ initial_media_index }},
+          "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+        }
+        {%- endcapture -%}
+
         <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
           {{ slideshow_media }}
         </div>
@@ -242,7 +254,7 @@
               {% render 'icon' with 'media-arrow-left' %}
             </button>
 
-            <div class="flickity-page-dots">
+            <div class="flickity-page-dots" data-flickity-config='{{ mobile_nav_flickity_options }}'>
               {%- for media in product.media -%}
                 <a data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio dot thumb-style {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                   <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
