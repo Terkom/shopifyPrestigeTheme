@@ -31,9 +31,9 @@
         "262eddc0-88b0-4d0e-a02f-df7848439661": {
           "type": "product_meta_mobile",
           "settings": {
-            "show_vendor": true,
+            "show_vendor": false,
             "show_sku": false,
-            "show_product_rating": false,
+            "show_product_rating": true,
             "show_taxes_included": false
           }
         },
