@@ -9055,7 +9055,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin-bottom: 80px;
   }
 }
-@media screen and (min-width: 1008px) {
+//
+// changed from 1008 to 641 -MJS
+//
+@media screen and (min-width: 641px) {
   .Product__Wrapper {
     max-width: calc(100% - 525px);
     margin-left: 0;
