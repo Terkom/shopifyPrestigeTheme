@@ -9595,7 +9595,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  */
 .ProductMeta {
   text-align: left;
-  line-height: 1.1;
 }
 @media screen and (min-width: 1008px) {
   .ProductMeta {
