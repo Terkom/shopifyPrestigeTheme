@@ -2084,7 +2084,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   width: 45px;
   height: 45px;
   margin: 0 6px;
-  // border-radius: 10%;
+  border-radius: 10%;
   cursor: pointer;
   border: 1px solid var(--border-color);
 }
@@ -2097,7 +2097,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   bottom: -6px;
 }
 .Product__MobileNavThumb.is-selected {
-  border: 1px solid var(--brand-color);
+  border: 2px solid var(--brand-color);
 }
 /**
  * ----------------------------------------------------------------------------------------------
