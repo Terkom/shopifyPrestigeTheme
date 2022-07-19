@@ -45,11 +45,11 @@
       <span class="ProductMeta__Title Heading u-h4">
         {{- product.title -}}
       </span>
-      <div class="ProductMeta__Rating Heading Text--subdued u-h7>
-        <a href="#stamped-main-widget">
+      <a href="#stamped-main-widget">
+        <div class="ProductMeta__Rating Heading Text--subdued u-h7>
           {%- render 'product-rating', product: product -%}
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
     {%- capture action_list_items -%}
       {%- comment -%} DISABLED mobile zoom control buttons -MJS
