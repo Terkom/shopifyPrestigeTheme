@@ -26,7 +26,7 @@
                 {%- if linklist != empty -%}
                   <!-- <h2 class="Footer__Title Heading u-h6">{{ linklist.title | escape }}</h2> -->
                       {%- for link in linklist.links -%}
-                          <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a> &nbsp;
+                          <p><a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a></p>
                       {%- endfor -%}
                 {%- endif -%}
 
