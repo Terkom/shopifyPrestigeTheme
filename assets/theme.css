@@ -5520,7 +5520,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Rte p:not(:last-child),
 .Rte ul:not(:last-child),
 .Rte ol:not(:last-child) {
-  margin-bottom: 1.6em;
+  // margin-bottom: 1.6em;
 }
 .Rte img,
 .Rte blockquote,
