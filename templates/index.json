@@ -42,25 +42,25 @@
             "link": "shopify:\/\/pages\/reviews"
           }
         },
-        "47f858c0-0081-4ae0-b558-624646b8b6f5": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
-            "link": ""
-          }
-        },
         "e2adfe6c-7cea-42e7-a745-f2538a7a16de": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/LA_Est_2018_copy.png",
             "link": ""
           }
+        },
+        "47f858c0-0081-4ae0-b558-624646b8b6f5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1657735884faeda64e-0",
-        "47f858c0-0081-4ae0-b558-624646b8b6f5",
-        "e2adfe6c-7cea-42e7-a745-f2538a7a16de"
+        "e2adfe6c-7cea-42e7-a745-f2538a7a16de",
+        "47f858c0-0081-4ae0-b558-624646b8b6f5"
       ],
       "settings": {
         "grid_mobile_items_per_row": 3,
