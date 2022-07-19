@@ -11454,6 +11454,11 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
+.Footer__Contact{
+  font-size: .9rem;
+  line-height: 1;
+}
+
 .afterpay-paragraph {
    margin-top: 0px;
    font-size: .9rem;
