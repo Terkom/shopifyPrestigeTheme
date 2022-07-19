@@ -9755,7 +9755,12 @@ shopify-payment-terms {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-
+@media screen and (max-width: 1007px) {
+  .ProductForm__Variants {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
 .ProductForm__Option {
   position: relative;
   margin-bottom: 10px;
