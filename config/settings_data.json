@@ -116,20 +116,18 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
           "footer-0": {
             "type": "text",
             "settings": {
               "title": "🌴 👟 🥇 💎  👀  🔥",
               "content": "<p>Shipped to you straight from our U.S. warehouses. Our shoelace charms are gold and silver plated to really make your kicks pop.<\/p>",
               "show_social_media": false
-            }
-          },
-          "footer-2": {
-            "type": "newsletter",
-            "disabled": true,
-            "settings": {
-              "title": "KEEP IN TOUCH.",
-              "content": "<p><\/p><p>Instagram: <a href=\"https:\/\/www.instagram.com\/lacecharms\/\" title=\"https:\/\/www.instagram.com\/lacecharms\/\">@lacecharms<\/a> 💖<\/p><p>Subscribe to receive updates, access to exclusive deals, and more:<\/p>"
             }
           },
           "9585e60f-3abd-45aa-a915-a1a5b0d9ff4c": {
@@ -139,19 +137,12 @@
               "content": "<p>info@mylacecharms.com<\/p><p>We're in Monday–Friday 9:30am - to 5:30pm PST.<\/p>",
               "show_social_media": true
             }
-          },
-          "footer-1": {
-            "type": "links",
-            "settings": {
-              "menu": "footer"
-            }
           }
         },
         "block_order": [
+          "footer-1",
           "footer-0",
-          "footer-2",
-          "9585e60f-3abd-45aa-a915-a1a5b0d9ff4c",
-          "footer-1"
+          "9585e60f-3abd-45aa-a915-a1a5b0d9ff4c"
         ],
         "settings": {
           "show_payment_methods": false,
