@@ -1717,7 +1717,7 @@ input.spr-button-primary[disabled],
   height: 45px;
   border: none;
   border-radius: 50%;
-  background: var(--button-text-color);
+  background: var(--brand-color);
   color: var(--button-background);
   cursor: pointer;
   text-align: center;
