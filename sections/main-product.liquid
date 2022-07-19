@@ -417,7 +417,7 @@
                   </p>
 
                 {%- when 'buy_buttons' -%}
-                  {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
+                  {%- if product.selling_plan_groups.size > 0 -%}
                     {%- assign use_primary_button = true -%}
                   {%- else -%}
                     {%- assign use_primary_button = false -%}
