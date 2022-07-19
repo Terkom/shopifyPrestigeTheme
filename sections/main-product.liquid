@@ -48,7 +48,7 @@
       {%- unless product.metafields.stamped.reviews_count < 1 -%}
         <a href="#review-anchor">
           <div class="ProductMeta__Rating Heading Text--subdued u-h7">
-            {%- render 'product-rating', product: product -%}
+            {%- render 'product-rating', product: product -%} {{ product.metafields.stamped.reviews_count }}
           </div>
         </a>
         {%- endunless -%}
