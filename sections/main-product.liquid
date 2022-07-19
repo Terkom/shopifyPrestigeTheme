@@ -41,11 +41,11 @@
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
-    <div class="Container hidden-lap-and-up" style="display: flex;">
+    <div class="Container hidden-lap-and-up" style="display: flex; justify-content: space-between;">
       <span class="ProductMeta__Title Heading u-h4">
         {{- product.title -}}
       </span>
-      <div class="ProductMeta__Rating Heading Text--subdued u-h7" style="align-self: stretch; text-align: right;">
+      <div class="ProductMeta__Rating Heading Text--subdued u-h7>
         <a href="#stamped-main-widget">
           {%- render 'product-rating', product: product -%}
         </a>
