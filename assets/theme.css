@@ -11448,3 +11448,9 @@ shopify-payment-terms {
 .afterpay-paragraph {
    font-size: .9rem;
 }
+@media screen and (max-width: 1007px) {
+   .afterpay-paragraph {
+     margin-bottom: 12px;
+   }
+} 
+}
