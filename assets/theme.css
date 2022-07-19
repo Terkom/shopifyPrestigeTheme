@@ -7869,6 +7869,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Footer__Title,
 .Footer .Link--primary:hover {
   color: var(--footer-heading-color);
+  weight: bold;
 }
 
 .Footer .Form__Input::-moz-placeholder {
