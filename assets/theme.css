@@ -11446,11 +11446,12 @@ shopify-payment-terms {
   }
 }
 .afterpay-paragraph {
+   margin-top: 0px;
    font-size: .9rem;
 }
 @media screen and (max-width: 1007px) {
    .afterpay-paragraph {
-     margin-bottom: 12px;
+    // margin-bottom: 12px;
    }
 } 
 }
