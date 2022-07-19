@@ -11451,7 +11451,7 @@ shopify-payment-terms {
 }
 @media screen and (max-width: 1007px) {
    .afterpay-paragraph {
-    // margin-bottom: 12px;
+      margin-bottom: 12px;
    }
 } 
 }
