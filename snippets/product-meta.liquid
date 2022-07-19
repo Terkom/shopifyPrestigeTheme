@@ -20,7 +20,7 @@
     {%- endif -%}
   </h1>
 
-  {%- if block.settings.show_product_rating -%}
+  {%- if block.settings.show_product_rating and product.metafields.stamped.reviews_count -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
       <a href="#stamped-main-widget">
         {%- render 'product-rating', product: product -%}
