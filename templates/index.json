@@ -159,10 +159,27 @@
             "product_3_horizontal_position": 70,
             "product_3_vertical_position": 50
           }
+        },
+        "e6b43348-a600-4a41-884c-3f39e0c77223": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ICU-2-G_Red_Square.jpg",
+            "dot_style": "dark",
+            "product_1": "iced-cuban-sneaker-chain",
+            "product_1_horizontal_position": 18,
+            "product_1_vertical_position": 55,
+            "product_2": "flat-shoelaces",
+            "product_2_horizontal_position": 30,
+            "product_2_vertical_position": 31,
+            "product_3": "bar-shoelace-charm",
+            "product_3_horizontal_position": 46,
+            "product_3_vertical_position": 70
+          }
         }
       },
       "block_order": [
-        "165826105750fd16ab-0"
+        "165826105750fd16ab-0",
+        "e6b43348-a600-4a41-884c-3f39e0c77223"
       ],
       "settings": {
         "subheading": "",
