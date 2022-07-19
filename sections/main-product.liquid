@@ -45,13 +45,13 @@
       <span class="ProductMeta__Title Heading u-h4">
         {{- product.title -}}x
       </span>
-      {%- unless product.metafields.stamped.reviews_count < 1 -%}
+      {%- if product.metafields.stamped.reviews_count -%}
         <a href="#review-anchor">
           <div class="ProductMeta__Rating Heading Text--subdued u-h7">
             {%- render 'product-rating', product: product -%} {{ product.metafields.stamped.reviews_count }}
           </div>
         </a>
-        {%- endunless -%}
+        {%- endif -%}
     </div>
     {%- capture action_list_items -%}
       {%- comment -%} DISABLED mobile zoom control buttons -MJS
