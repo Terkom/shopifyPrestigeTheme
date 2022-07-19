@@ -41,10 +41,15 @@
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
-    <div class="Container">
+    <div class="Container" style="display: flex;">
       <span class="ProductMeta__Title Heading u-h4 hidden-lap-and-up">
         {{- product.title -}}
       </span>
+    </div>
+    <div class="ProductMeta__Rating Heading Text--subdued u-h7" style="text-align: right;">
+      <a href="#stamped-main-widget">
+        {%- render 'product-rating', product: product -%}
+      </a>
     </div>
     {%- capture action_list_items -%}
       {%- comment -%} DISABLED mobile zoom control buttons -MJS
