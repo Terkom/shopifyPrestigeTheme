@@ -45,7 +45,7 @@
       <span class="ProductMeta__Title Heading u-h4">
         {{- product.title -}}
       </span>
-      <a href="#stamped-main-widget">
+      <a href="#review-anchor">
         <div class="ProductMeta__Rating Heading Text--subdued u-h7">
           {%- render 'product-rating', product: product -%}
         </div>
@@ -331,6 +331,7 @@
                         {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
                       </div>
                     </div>
+                    <a id="review-anchor"></a>
                   {%- endif -%}
 
                 {%- when 'share_buttons' -%}
