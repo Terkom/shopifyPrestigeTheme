@@ -18,6 +18,7 @@
     </h1>
   {%- endunless -%}
 
+  {%- comment -%} MOVED TO TOP OF PAGE -MJS
   {%- if block.settings.show_product_rating -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
       <a href="#stamped-main-widget">
@@ -25,7 +26,8 @@
       </a>
     </div>
   {%- endif -%}
-
+  {%- endcomment -%}
+  
   {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
     <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
   {%- endif -%}
