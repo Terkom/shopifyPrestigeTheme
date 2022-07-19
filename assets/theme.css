@@ -9109,7 +9109,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   position: relative;
   margin-bottom: 28px;
 }
-
+@media screen and (max-width: 1007px) {
+  .Product__Gallery {
+    margin-bottom: 14px;
+  }
+}
 .Product__ViewInSpace {
   background: rgba(var(--text-color-rgb), 0.08);
   /* This color is defined by Shopify spec */
@@ -9757,7 +9761,7 @@ shopify-payment-terms {
 }
 @media screen and (max-width: 1007px) {
   .ProductForm__Variants {
-    margin-top: 6px;
+    margin-top: 0px;
     margin-bottom: 12px;
   }
 }
