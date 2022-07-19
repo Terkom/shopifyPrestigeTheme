@@ -327,6 +327,9 @@
                 {%- when 'description' -%}
                   {%- if product.description != blank -%}
                     <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+                      <span class="ProductMeta__Title Heading u-h4">
+                        Product Details
+                      </span>
                       <div class="Rte">
                         {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
                       </div>
