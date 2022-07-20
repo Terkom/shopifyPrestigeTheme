@@ -71,10 +71,12 @@
         "button_link": ""
       }
     },
-    "1658284528f352c99c": {
-      "type": "apps",
+    "165828492324cd53d8": {
+      "type": "custom-html",
       "settings": {
-        "include_margins": true
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"text-align: center;\">\n<h1 style=\"font-size: 30px; line-height: 30px; text-align: center;\">ELEVATED CHARMS FOR YOUR SNEAKERS<\/h1>\n\n<\/div>"
       }
     },
     "165775000702c0a96f": {
@@ -124,29 +126,6 @@
         "button_link": ""
       }
     },
-    "165776627709b745ac": {
-      "type": "image-grid",
-      "blocks": {
-        "165776627745435374-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "165776627745435374-0"
-      ],
-      "settings": {
-        "grid_mobile_items_per_row": 1,
-        "grid_desktop_items_per_row": 1,
-        "grid_margin": false,
-        "max_width": 50,
-        "button_text": "Shop Now",
-        "button_link": ""
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -174,6 +153,29 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "165776627709b745ac": {
+      "type": "image-grid",
+      "blocks": {
+        "165776627745435374-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165776627745435374-0"
+      ],
+      "settings": {
+        "grid_mobile_items_per_row": 1,
+        "grid_desktop_items_per_row": 1,
+        "grid_margin": false,
+        "max_width": 50,
+        "button_text": "Shop Now",
+        "button_link": ""
+      }
+    },
     "16577748627471cce1": {
       "type": "newsletter-plain",
       "settings": {
@@ -190,10 +192,10 @@
   "order": [
     "slideshow",
     "1657735884bb277b04",
-    "1658284528f352c99c",
+    "165828492324cd53d8",
     "165775000702c0a96f",
-    "165776627709b745ac",
     "featured-collections",
+    "165776627709b745ac",
     "16577748627471cce1"
   ]
 }
