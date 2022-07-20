@@ -1,14 +1,39 @@
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}">
   <div class="Container">
-
-    {{ section.settings.review }}
+    <a href="{{ settings.section.link }}">
+      <div style="text-align: center;">
+        <span style="color: #f49ac1; font-size: 30px" ★ ★ ★ ★ ★</span><br />
+        <span style="font-size: 30px; line-height: 1.15;">
+          <i>“{{ section.settings.review }}”</i><br />
+        </span>
+        <div class="Text--subdued" style="line-height: 2;">
+          {{ section.settings.name }}, Verified Buyer
+        </div>
+      </div>
+    </a>
   </div>
 </section>
 
 {% schema %}
   {
     "name": "Highlight Review",
-    "settings": []
+    "settings": [
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "review",
+      "label": "Review quote"
+    },
+    {
+      "type": "text",
+      "id": "name",
+      "label": "Customer name"
+    }
+    ]
   }
 {% endschema %}
 
