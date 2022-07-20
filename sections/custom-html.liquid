@@ -1,5 +1,4 @@
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}">
-  <div class="Container">
+<section class="Section" id="section-{{ section.id }}">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
         {%- if section.settings.subheading != blank -%}
@@ -11,7 +10,6 @@
       </header>
     {%- endif -%}
     {{ section.settings.html }}
-  </div>
 </section>
 
 {% schema %}
