@@ -87,6 +87,14 @@
         "html": "<div style=\"text-align: center; margin-top: 12px;\">\n<a style=\"color: #f49ac1; font-size: 30px\" href=\"https:\/\/www.mylacecharms.com\/pages\/reviews?utm-link=home-review\">★ ★ ★ ★ ★<br>\n<\/a><span class=\"u-h1\">\n<i>“My Lace Charms are awesome and I love them on my Jordan 1's”<\/i>\n<\/span>\n<br><span style=\"color: #a0a0a0; line-height: 2;\">Angela B., Verified Buyer<\/span>\n<\/div>"
       }
     },
+    "1658287277c075fca6": {
+      "type": "highlight-review",
+      "settings": {
+        "link": "https:\/\/www.mylacecharms.com\/pages\/reviews?utm-link=home-review",
+        "review": "“My Lace Charms are awesome and I love them on my Jordan 1's”",
+        "name": "Angela B."
+      }
+    },
     "165775000702c0a96f": {
       "type": "image-grid",
       "blocks": {
@@ -195,14 +203,6 @@
         "title": "Keep in touch.",
         "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
       }
-    },
-    "1658287277c075fca6": {
-      "type": "highlight-review",
-      "settings": {
-        "link": "https:\/\/www.mylacecharms.com\/pages\/reviews?utm-link=home-review",
-        "review": "“My Lace Charms are awesome and I love them on my Jordan 1's”",
-        "name": "Angela B."
-      }
     }
   },
   "order": [
@@ -210,10 +210,10 @@
     "165828492324cd53d8",
     "1657735884bb277b04",
     "1658286008fc32cedf",
+    "1658287277c075fca6",
     "165775000702c0a96f",
     "featured-collections",
     "165776627709b745ac",
-    "16577748627471cce1",
-    "1658287277c075fca6"
+    "16577748627471cce1"
   ]
 }
