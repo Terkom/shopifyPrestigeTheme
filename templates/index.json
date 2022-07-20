@@ -32,6 +32,14 @@
         "button_background": "#ffffff"
       }
     },
+    "165828492324cd53d8": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div style=\"text-align: center;\">\n<h1 style=\"font-size: 30px; line-height: 30px; text-align: center;\">ELEVATED CHARMS FOR YOUR SNEAKERS<\/h1>\n\n<\/div>"
+      }
+    },
     "1657735884bb277b04": {
       "type": "image-grid",
       "blocks": {
@@ -69,14 +77,6 @@
         "max_width": 60,
         "button_text": "Shop Now",
         "button_link": ""
-      }
-    },
-    "165828492324cd53d8": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<div style=\"text-align: center;\">\n<h1 style=\"font-size: 30px; line-height: 30px; text-align: center;\">ELEVATED CHARMS FOR YOUR SNEAKERS<\/h1>\n\n<\/div>"
       }
     },
     "165775000702c0a96f": {
@@ -191,8 +191,8 @@
   },
   "order": [
     "slideshow",
-    "1657735884bb277b04",
     "165828492324cd53d8",
+    "1657735884bb277b04",
     "165775000702c0a96f",
     "featured-collections",
     "165776627709b745ac",
