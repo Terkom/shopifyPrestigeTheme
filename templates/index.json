@@ -77,7 +77,7 @@
         "7876de1d-e085-46c8-ad15-eb425eb030dc": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/carousel\/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
-            "title": "",
+            "title": "Reviews",
             "auto_play": false,
             "take": 30,
             "color_title": "",
