@@ -81,7 +81,7 @@
         {%- capture supported_sizes -%}
           {%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: collection.image -%}
         {%- endcapture -%}
-      <div class="Container">
+        <div>
           <div class="" style="overflow-x: hidden; text-align: center; width: 100%; height: 140px;">
             {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="Image--lazyLoad"
@@ -95,8 +95,9 @@
           <span class="Image__Loader"></span>             
           <noscript>
             <img class="" src="{{ block.settings.image | img_url: '840x' }}" alt="{{ collection.title | escape }}">
-            </noscript>
+          </noscript>
         </div>
+
     {%- else -%}
           {%- if section.settings.show_collection_info -%}
             <div class="Container">
