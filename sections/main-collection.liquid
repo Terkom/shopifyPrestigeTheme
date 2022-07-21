@@ -81,7 +81,7 @@
       {%- capture supported_sizes -%}
         {%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: collection.image -%}
       {%- endcapture -%}
-        <div class="" style="display: flex; text-align: center; overflow-x: hidden; max-width: {{ collection.image.width }}px; min-height: 140px;">
+        <div class="" style="display: flex; text-align: center; overflow-x: clip; max-width: {{ collection.image.width }}px; min-height: 140px;">
           {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           <img class="Image--lazyLoad"
             data-src="{{ image_url }}"
