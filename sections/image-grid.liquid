@@ -1,10 +1,40 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="{% if section.settings.grid_margin %}Image--grid {% endif %}{% unless section.settings.grid_desktop_items_per_row == 1 %}Grid Grid--center{% endunless %}"" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
+      <style>
+        .ImageGrid {
+          diplay: flex;
+          {%- if section.settings.grid_margin == false -%}
+            margin: -6px, -6px;
+          {%- endif -%}
+        }
+        .ImageGrid-item {
+            text-align: center;
+            vertical-align: middle;
+            margin: 6px;
+            {%- if section.settings.grid_mobile_items_per_row == 1 -%}
+              width: 100%;
+            {%- elsif section.settings.grid_mobile_items_per_row == 2 -%}
+              width: 50%;
+            {%- endif -%}
+        }
+          @media screen and (min-width: 641px){
+            .ImageGrid-item {
+              {%- if section.settings.grid_desktop_items_per_row == 1 -%}
+                width: 100%;
+              {%- elsif section.settings.grid_desktop_items_per_row == 2 -%}
+                width: 50%;
+              {%- elsif section.settings.grid_desktop_items_per_row == 3 -%}
+                width: 33.34%;
+              {%- elsif section.settings.grid_desktop_items_per_row == 4 -%}
+                width: 25%;
+              {%- endif -%}
+              }
+          }
+      </style>
+      <div class="ImageGrid">
         {%- for block in section.blocks -%}
           {%- assign image = block.settings.image -%}
-            <div {%- unless section.settings.grid_desktop_items_per_row == 1 %} class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up" style="text-align: center; vertical-align: middle;"{% endunless %}>
-
+            <div class="ImageGrid-item">
               {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{%  endif %}
               <div class="AspectRatio" style="max-width: {{ block.settings.image.width | times: section.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
