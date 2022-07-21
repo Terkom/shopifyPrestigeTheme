@@ -67,6 +67,10 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
+@media screen and (max-width: 640px) {
+    overflow-x: hidden;
+  }
+}
 
 /**
  * Text-level semantic
