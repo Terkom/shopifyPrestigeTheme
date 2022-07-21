@@ -78,6 +78,24 @@
 
   {%- if collection.all_products_count > 0 -%}
     {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
+      {%- capture supported_sizes -%}
+        {%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}
+      {%- endcapture -%}
+        <div class="" style="overflow-x: clip; max-width: {{ collection.image.width }}">
+          {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_840x.' -%}
+          <img class="Image--lazyLoad"
+            data-src="{{ image_url }}"
+            data-widths="[{{ supported_sizes }}]"
+            data-sizes="auto"
+            alt="{{ collection.title | escape }}">
+        </div>
+        <span class="Image__Loader"></span>             
+        <noscript>
+          <img class="" src="{{ block.settings.image | img_url: '840x' }}" alt="{{ collection.title | escape }}">
+        </noscript>
+      </div>
+
+      
       <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
