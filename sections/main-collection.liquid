@@ -78,7 +78,7 @@
 
   {%- if collection.all_products_count > 0 -%}
     {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
-      <header class="PageHeader PageHeader--withBackground style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})" style="max-height: 140px;">
+      <header class="PageHeader PageHeader--withBackground style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})" style="height: 140px;">
           <div class="PageHeader__ImageWrapper Image--lazyLoad"
                data-optimumx="1.2"
                data-bgset="{{ collection.image | img_url: 'x600' }} 600w, {{ collection.image | img_url: '800x' }} 800w, {{ collection.image | img_url: '1200x' }} 1200w, {{ collection.image | img_url: '1400x' }} 1400w, {{ collection.image | img_url: '1600x' }} 1600w">
