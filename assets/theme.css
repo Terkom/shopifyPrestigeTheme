@@ -68,16 +68,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-@media screen and (max-width: 640px) {
-    ::-webkit-scrollbar {
-      display: none;
-  }
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-}
-
 /**
  * Text-level semantic
  */
