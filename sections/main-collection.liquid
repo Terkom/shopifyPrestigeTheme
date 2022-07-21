@@ -79,23 +79,21 @@
   {%- if collection.all_products_count > 0 -%}
     {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       <div class="FlexboxIeFix">
-        <header class="PageHeader">
-          {%- capture supported_sizes -%}
-            {%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: collection.image -%}
-          {%- endcapture -%}
-            <div class="" style="display: flex; align-items: center; overflow-x: clip; text-align: center; overflow-x: clip; width: 840px; height: 140px;">
-              {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-              <img class="Image--lazyLoad"
-                data-src="{{ image_url }}"
-                data-widths="[{{ supported_sizes }}]"
-                data-sizes="auto"
-                alt="{{ collection.title | escape }}">
-            </div>
-            <span class="Image__Loader"></span>             
-            <noscript>
-              <img class="" src="{{ block.settings.image | img_url: '840x' }}" alt="{{ collection.title | escape }}">
+        {%- capture supported_sizes -%}
+          {%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: collection.image -%}
+        {%- endcapture -%}
+          <div class="" style="display: flex; align-items: center; overflow-x: clip; text-align: center; overflow-x: clip; width: 840px; height: 140px;">
+            {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad"
+              data-src="{{ image_url }}"
+              data-widths="[{{ supported_sizes }}]"
+              data-sizes="auto"
+              alt="{{ collection.title | escape }}">
+          </div>
+          <span class="Image__Loader"></span>             
+          <noscript>
+            <img class="" src="{{ block.settings.image | img_url: '840x' }}" alt="{{ collection.title | escape }}">
             </noscript>
-          </header>
         </div>
     {%- else -%}
           {%- if section.settings.show_collection_info -%}
