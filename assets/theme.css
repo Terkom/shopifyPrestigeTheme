@@ -4903,6 +4903,15 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 }
 
+.Collection_ImageWrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
 .PageHeader .SectionHeader__Heading,
 .PageHeader .SectionHeader__Description {
   margin-top: 0 !important;
