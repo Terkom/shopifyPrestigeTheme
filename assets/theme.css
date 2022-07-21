@@ -68,12 +68,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-@media screen and (max-width: 640px) {
-  body::-webkit-scrollbar {
-    display: none; /* hide scrollbar for Chrome, Safari, and Opera */
-  }
-}
-
 /**
  * Text-level semantic
  */
