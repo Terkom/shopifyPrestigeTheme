@@ -39,10 +39,10 @@ or change the format of some info
     {%- if product.metafields.reviews.rating.value != blank -%}
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "{{ product.metafields.reviews.rating.value }}",
-        "reviewCount": "{{ product.metafields.reviews.rating_count.value }}",
-        "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}",
-        "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}"
+        "ratingValue": "{{ product.metafields.stamped.reviews_average }}",
+        "reviewCount": "{{ product.metafields.stamped.reviews_count }}",
+        "worstRating": "1",
+        "bestRating": "5"
       },
     {%- endif -%}
     {%- if is_barcode_available and is_valid_gtin_length %}
