@@ -1,13 +1,13 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="image-grid" data-settings='{{ section_settings }}'>
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="false" role="tabpanel" {{ block.shopify_attributes }}>
       <style>
-        .ImageGrid {
+        .ImageGrid-{{ section.id }} {
           diplay: flex;
           {%- if section.settings.grid_margin == false -%}
             margin: -6px, -6px;
           {%- endif -%}
         }
-        .ImageGrid-item {
+        .ImageGrid-item-{{ section.id }} {
             text-align: center;
             vertical-align: middle;
             margin: 6px;
@@ -18,7 +18,7 @@
             {%- endif -%}
         }
           @media screen and (min-width: 641px){
-            .ImageGrid-item {
+            .ImageGrid-item-{{ section.id }} {
               {%- if section.settings.grid_desktop_items_per_row == 1 -%}
                 width: 100%;
               {%- elsif section.settings.grid_desktop_items_per_row == 2 -%}
@@ -31,12 +31,12 @@
               }
           }
       </style>
-      <div class="ImageGrid">
+      <div class="ImageGrid-{{ section.id }}">
         {%- for block in section.blocks -%}
           {%- assign image = block.settings.image -%}
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,335,340,350,375,400,600,700,800,900,1000,1200', image: block.settings.image -%}{%- endcapture -%}
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{%  endif %}
-              <div class="ImageGrid-item AspectRatio" style="max-width: {{ block.settings.image.width | times: section.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
+              <div class="ImageGrid-item-{{ section.id }} AspectRatio" style="max-width: {{ block.settings.image.width | times: section.settings.max_width | divided_by: 100 }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
                 {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 <img class="Image--lazyLoad"
                   data-src="{{ image_url }}"
