@@ -4905,6 +4905,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Collection_ImageWrapper {
   position: absolute;
+  height: 140px;
   width: 100%;
   top: 0;
   left: 0;
