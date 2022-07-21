@@ -79,12 +79,12 @@
   {%- if collection.all_products_count > 0 -%}
     {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       <header class="PageHeader PageHeader--withBackground style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
-          <div class="PageHeader__ImageWrapper Image--lazyLoad" style="height: 140px;"
+          <div class="Collection_ImageWrapper Image--lazyLoad" style="height: 140px;"
                data-optimumx="1.2"
                data-bgset="{{ collection.image | img_url: 'x600' }} 600w, {{ collection.image | img_url: '800x' }} 800w, {{ collection.image | img_url: '1200x' }} 1200w, {{ collection.image | img_url: '1400x' }} 1400w, {{ collection.image | img_url: '1600x' }} 1600w">
           </div>
           <noscript>
-            <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
+            <div class="Collection_ImageWrapper" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
           </noscript>
       </header>
         {%- capture supported_sizes -%}
