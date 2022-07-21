@@ -4869,7 +4869,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   display: flex;
   margin: 0;
   width: 100%;
-  min-height: 450px;
+  min-height: 140px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
