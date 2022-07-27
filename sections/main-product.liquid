@@ -361,10 +361,17 @@
 
                 {%- when 'in_stock' -%}
                   {%- if product.selected_or_first_available_variant.available %}
+                    {%- if product.selected_or_first_available_variant.inventory_quantity > 0 %}
                     <p>
                       <span style="color: #2e8539">In Stock</span>
                       <br>Ships next business day
                     </p>
+                    {%- else -%}
+                    <p>
+                      <span style="font-weight: bold;">Backordered</span>
+                      <br>Ships in 2-4 weeks
+                    </p>
+                    {%- endif -%}
                   {%- endif -%}
                 
                 {%- when 'how_many' -%}
