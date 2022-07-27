@@ -1430,7 +1430,7 @@
           return src.replace(/http(s)?:/, '');
         }
 
-        var match = src.match(/\.(jpg|jpeg|gif|png|bmp|bitmap|tiff|tif)(\?v=\d+)?$/i);
+        var match = src.match(/\.(jpg|jpeg|gif|png|bmp|bitmap|tiff|tif|webp)(\?v=\d+)?$/i);
 
         if (match) {
           var prefix = src.split(match[0]);
