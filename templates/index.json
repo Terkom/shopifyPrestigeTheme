@@ -104,18 +104,18 @@
             "link": "shopify:\/\/collections\/sneaker-chains"
           }
         },
+        "38f83d16-7bb5-4ec6-a9b0-700bc531388c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-sgc.jpg",
+            "link": "shopify:\/\/collections\/sunglasses-chains"
+          }
+        },
         "567bbf1b-6e29-40e2-91f1-c14dd0367b3d": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/home-tips-canva.jpg",
             "link": "shopify:\/\/collections\/lacetips"
-          }
-        },
-        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-laces-canva.jpg",
-            "link": "shopify:\/\/collections\/shoelaces"
           }
         },
         "966a29f6-1841-4168-9a74-9485bcf008af": {
@@ -125,21 +125,21 @@
             "link": "shopify:\/\/collections\/bags"
           }
         },
-        "38f83d16-7bb5-4ec6-a9b0-700bc531388c": {
+        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-sgc.jpg",
-            "link": "shopify:\/\/collections\/sunglasses-chains"
+            "image": "shopify:\/\/shop_images\/home-laces-canva.jpg",
+            "link": "shopify:\/\/collections\/shoelaces"
           }
         }
       },
       "block_order": [
         "1657750007e493dded-0",
         "c9d02785-d0d3-4345-a8f1-507451d7e397",
+        "38f83d16-7bb5-4ec6-a9b0-700bc531388c",
         "567bbf1b-6e29-40e2-91f1-c14dd0367b3d",
-        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306",
         "966a29f6-1841-4168-9a74-9485bcf008af",
-        "38f83d16-7bb5-4ec6-a9b0-700bc531388c"
+        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306"
       ],
       "settings": {
         "grid_mobile_items_per_row": 2,
