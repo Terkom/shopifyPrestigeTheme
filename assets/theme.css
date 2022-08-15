@@ -10888,6 +10888,28 @@ shopify-payment-terms {
     height: 70px;
   }
 }
+
+.Sidebar_Item {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 0px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.Sidebar_SubItem {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 6px;
+  padding-left: 24px;
+  text-align: left;
+  cursor: pointer;
+}
+
+
 /**
  * ----------------------------------------------------------------------------
  * Slideshow
