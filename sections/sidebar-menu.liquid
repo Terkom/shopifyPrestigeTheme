@@ -13,18 +13,18 @@
         <div class="Drawer__Container">
           <nav class="SidebarMenu__Nav SidebarMenu__Nav--primary" aria-label="{{ 'header.navigation.sidebar_title' | t }}">
             {%- for link in main_menu.links -%}
-              <div class="Collapsible">
+              <div class="Collapsible Collapsible--autoExpand">
                 {%- if link.links != blank -%}
-                  <button class="Collapsible__Button Collapsible--autoExpand Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
+                  <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
                     {{- link.title | escape -}} <span class="Collapsible__Plus"></span>
                   </button>
 
                   <div class="Collapsible__Inner">
                     <div class="Collapsible__Content">
                       {%- for sub_link in link.links -%}
-                        <div class="Collapsible">
+                        <div class="Collapsible Collapsible--autoExpand">
                           {%- if sub_link.links != blank -%}
-                            <button class="Collapsible__Button Collapsible--autoExpand Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
+                            <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
                               {{- sub_link.title | escape -}} <span class="Collapsible__Plus"></span>
                             </button>
 
