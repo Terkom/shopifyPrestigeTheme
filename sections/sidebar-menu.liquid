@@ -89,7 +89,7 @@
             <ul class="Linklist Linklist--spacingLoose">
               {%- for link in secondary_menu.links -%}
                 <li class="Linklist__Item">
-                  <a href="{{ link.url }}" class="Text--subdued Link Link--primary">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
                 </li>
               {%- endfor -%}
 
@@ -97,7 +97,7 @@
 
               {%- if shop.customer_accounts_enabled -%}
                 <li class="Linklist__Item">
-                  <a href="{{ routes.account_url }}" class="Text--subdued Link Link--primary">{{ 'header.navigation.account' | t }}</a>
+                  <a href="{{ routes.account_url }}" class="Link Link--primary">{{ 'header.navigation.account' | t }}</a>
                 </li>
               {%- endif -%}
             </ul>
