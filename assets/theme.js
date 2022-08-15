@@ -4735,7 +4735,7 @@
         this.delegateElement.on('click', '[data-action="toggle-search"]', this._closeNavigationListener);
         this.delegateElement.on('mouseleave', '.DropdownMenu [aria-haspopup]', this._closeMenu.bind(this), true);
         this.delegateElement.on('mouseenter', '.DropdownMenu [aria-haspopup]', this._adjustDropdownPosition.bind(this), true);
-        this.delegateElement.on('click', '.Header__MainNav .HorizontalList__Item, [aria-haspopup]', this._handleTouchMenu.bind(this));
+        this.delegateElement.on('click', '.Header__ExtraNav .HorizontalList__Item, [aria-haspopup]', this._handleTouchMenu.bind(this));
         
         if (this.isTouch) {
           this.delegateElement.on('click', '.Header__MainNav [aria-haspopup]', this._handleTouchMenu.bind(this));
