@@ -53,8 +53,8 @@
                 </div>
               {%- else -%}
                   {%- if link.links != blank -%}
-                    <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
-                      {{- link.title | escape -}} <span class="Collapsible__Plus"></span>
+                    <button class="Collapsible__Button Heading u-h6">
+                      {{- link.title | escape -}}
                     </button>
   
                     <div class="Collapsible__Inner">
@@ -62,8 +62,8 @@
                         {%- for sub_link in link.links -%}
                           <div class="Collapsible">
                             {%- if sub_link.links != blank -%}
-                              <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
-                                {{- sub_link.title | escape -}} <span class="Collapsible__Plus"></span>
+                              <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7">
+                                {{- sub_link.title | escape -}}
                               </button>
   
                               <div class="Collapsible__Inner">
@@ -85,7 +85,7 @@
                       </div>
                     </div>
                   {%- else -%}
-                    <a href="{{ link.url }}" class="Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                    <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
                   {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
