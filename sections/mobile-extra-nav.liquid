@@ -45,7 +45,7 @@
 
         <nav class="Header__MainNav" aria-label="{{ 'header.navigation.title' | t }}">
           <ul class="HorizontalList HorizontalList--spacingExtraLoose">
-            {%- for link in main_menu.links -%}
+            {%- for link in section.settings.extra_nav_menu.links -%}
               {%- assign downcased_link_title = link.title | downcase | strip -%}
               {%- assign use_mega_menu = false -%}
 
