@@ -1,4 +1,4 @@
-<nav class="Header__MainNav Header__ExtraNav hidden-desk SectionHeader--center" style="padding-bottom: 6px;" aria-label="{{ 'header.navigation.title' | t }}">
+<nav class="Header__MainNav hidden-desk SectionHeader--center" style="padding-bottom: 6px;" aria-label="{{ 'header.navigation.title' | t }}">
   <ul class="HorizontalList HorizontalList--spacingLoose">
     {%- for link in section.settings.extra_nav_menu.links -%}
       {%- assign downcased_link_title = link.title | downcase | strip -%}
@@ -28,7 +28,7 @@
                 {%- endif -%}
               {%- endcapture -%}
 
-              <li class="HorizontalList__Item {%- if link.links == blank and link.active %}is-active{% endif %}" {% if menu_item_dropdown != blank %}aria-haspopup="true"{% endif %}>
+              <li class="HorizontalList__Item ExtraNav__Item {%- if link.links == blank and link.active %}is-active{% endif %}" {% if menu_item_dropdown != blank %}aria-haspopup="true"{% endif %}>
                 <a {% if menu_item_dropdown == blank %}href="{{ link.url }}"{% endif -%} class="Heading u-h6">
                   {{- link.title | escape -}}
 
