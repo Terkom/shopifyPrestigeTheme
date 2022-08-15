@@ -53,14 +53,14 @@
                 </div>
               {%- else -%}
                   {%- if link.links != blank -%}
-                    <button class="Collapsible__Button Heading u-h6">
+                    <button class="Sidebar_Item Heading u-h6">
                       {{- link.title | escape -}}
                     </button>
   
                     <div class="Collapsible__Content">
                       {%- for sub_link in link.links -%}
                           {%- if sub_link.links != blank -%}
-                            <button class="Collapsible__Button Heading Link--primary u-h7">
+                            <button class="Sidebar_SubItem Heading Link--primary u-h7">
                               {{- sub_link.title | escape -}}
                             </button>
 
