@@ -59,7 +59,6 @@
   
                     <div class="Collapsible__Content">
                       {%- for sub_link in link.links -%}
-                        <div class="Collapsible">
                           {%- if sub_link.links != blank -%}
                             <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7">
                               {{- sub_link.title | escape -}}
@@ -77,7 +76,6 @@
                           {%- else -%}
                             <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Text--subdued Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
                           {%- endif -%}
-                        </div>
                       {%- endfor -%}
                     </div>
                   {%- else -%}
