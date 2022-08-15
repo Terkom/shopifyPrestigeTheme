@@ -74,12 +74,12 @@
                               </ul>
                               </div>
                           {%- else -%}
-                            <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
+                            <a href="{{ sub_link.url }}" class="Sidebar_SubItem Heading Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
                           {%- endif -%}
                       {%- endfor -%}
                     </div>
                   {%- else -%}
-                    <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                    <a href="{{ link.url }}" class="Sidebar_Item Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
                   {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
