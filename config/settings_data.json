@@ -64,6 +64,7 @@
         "settings": {
           "primary_menu": "nested-nav-menu",
           "secondary_menu": "sub-menu",
+          "collapsible_menu": false,
           "show_social_media": true
         }
       },
