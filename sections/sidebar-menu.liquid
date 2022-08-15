@@ -53,13 +53,13 @@
                 </div>
               {%- else -%}
                   {%- if link.links != blank -%}
-                    <button class="Sidebar_Item Heading u-h5">
+                    <button class="Sidebar_Item Heading u-h4">
                       {{- link.title | escape -}}
                     </button>
   
                       {%- for sub_link in link.links -%}
                           {%- if sub_link.links != blank -%}
-                            <button class="Sidebar_SubItem Heading Link--primary u-h6">
+                            <button class="Sidebar_SubItem Heading Link--primary u-h5">
                               {{- sub_link.title | escape -}}
                             </button>
 
@@ -73,11 +73,11 @@
                               </ul>
                               </div>
                           {%- else -%}
-                            <a href="{{ sub_link.url }}" class="Sidebar_SubItem Heading Link Link--primary u-h6">{{ sub_link.title | escape }}</a>
+                            <a href="{{ sub_link.url }}" class="Sidebar_SubItem Heading Link Link--primary u-h5">{{ sub_link.title | escape }}</a>
                           {%- endif -%}
                       {%- endfor -%}
                   {%- else -%}
-                    <a href="{{ link.url }}" class="Sidebar_Item Heading Link Link--primary u-h5">{{ link.title | escape }}</a>
+                    <a href="{{ link.url }}" class="Sidebar_Item Heading Link Link--primary u-h4">{{ link.title | escape }}</a>
                   {%- endif -%}
               {%- endif -%}
             {%- endfor -%}
@@ -89,7 +89,7 @@
             <ul class="Linklist">
               {%- for link in secondary_menu.links -%}
                 <li class="Linklist__Item">
-                  <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="Link Link--primary u-h4">{{ link.title | escape }}</a>
                 </li>
               {%- endfor -%}
 
@@ -97,7 +97,7 @@
 
               {%- if shop.customer_accounts_enabled -%}
                 <li class="Linklist__Item">
-                  <a href="{{ routes.account_url }}" class="Link Link--primary">{{ 'header.navigation.account' | t }}</a>
+                  <a href="{{ routes.account_url }}" class="Link Link--primary u-h4">{{ 'header.navigation.account' | t }}</a>
                 </li>
               {%- endif -%}
             </ul>
