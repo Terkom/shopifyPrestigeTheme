@@ -62,8 +62,8 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "main-menu",
-          "secondary_menu": "",
+          "primary_menu": "nested-nav-menu",
+          "secondary_menu": "sub-menu",
           "show_social_media": true
         }
       },
