@@ -602,7 +602,7 @@
         // If this is an auto-expand and that it reaches the needed breakpoint, we do nothing
         var parentCollapsible = target.closest('.Collapsible');
 
-        if (parentCollapsible.classList.contains('Collapsible--autoExpand')) {
+        if (parentCollapsible.classList.contains('Collapsible--autoExpand') && Responsive.matchesBreakpoint('tablet-and-up')) {
           return;
         }
 
