@@ -1,5 +1,5 @@
 <nav class="Header__MainNav hidden-desk SectionHeader--center" style="padding-bottom: 6px;" aria-label="{{ 'header.navigation.title' | t }}">
-  <ul class="HorizontalList HorizontalList--spacingLoose">
+  <ul class="HorizontalList">
     {%- for link in section.settings.extra_nav_menu.links -%}
       {%- assign downcased_link_title = link.title | downcase | strip -%}
               {%- capture menu_item_dropdown -%}
