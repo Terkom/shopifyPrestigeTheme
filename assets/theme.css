@@ -8246,6 +8246,15 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   background-color: currentColor;
 }
 
+.Header--center .Header__MainNav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 18px;
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (min-width: 641px) {
   .Header__Wrapper {
     padding: 18px 30px;
