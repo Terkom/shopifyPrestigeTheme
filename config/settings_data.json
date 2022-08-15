@@ -239,6 +239,14 @@
           "label_name": "",
           "label_email": ""
         }
+      },
+      "6770146895900431855": {
+        "type": "shopify:\/\/apps\/delivery\/blocks\/app-embed\/83d8bfd8-d404-4f9a-ae93-22363b03f58b",
+        "disabled": false,
+        "settings": {
+          "top-border": true,
+          "bottom-border": false
+        }
       }
     }
   },
