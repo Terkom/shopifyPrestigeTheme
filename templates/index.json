@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1660609488ff03f2a5": {
+      "type": "mobile-extra-nav",
+      "settings": {
+        "extra_nav_menu": "extra-mobile-nav-menu"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -214,6 +220,7 @@
     }
   },
   "order": [
+    "1660609488ff03f2a5",
     "slideshow",
     "165828492324cd53d8",
     "1657735884bb277b04",
