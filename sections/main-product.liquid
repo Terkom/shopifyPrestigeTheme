@@ -376,8 +376,8 @@
                 
                 {%- when 'how_many' -%}
                   <p>
-                    {%- if product.type == 'Bundle' -%}
-                      {%- if product_option.selected_value contains "12 Pack" -%}
+                    {%- if product.type == 'Bundle' -%} {{ product.options_with_values }}
+                      {%- if product.options_with_values contains "12 Pack" -%}
                         &#10157; Set of 12 charms
                       {%- elsif product_option.selected_value contains "20 Pack" -%}
                         &#10157; Set of 20 charms
