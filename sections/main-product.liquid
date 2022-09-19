@@ -377,7 +377,11 @@
                 {%- when 'how_many' -%}
                   <p>
                     {%- if product.type == 'Bundle' -%}
-                      &#10157; Set of 12 charms
+                      {%- if product_option.selected_value contains "12 Pack" -%}
+                        &#10157; Set of 12 charms
+                      {%- elsif product_option.selected_value contains "20 Pack" -%}
+                        &#10157; Set of 20 charms
+                      {%- endif -%}
                     {%- elsif product.type == 'Pair' -%}
                     	&#10157; Pair of two charms
                     {%- elsif product.type == 'Chain' -%}
