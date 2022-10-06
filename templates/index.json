@@ -137,6 +137,13 @@
             "image": "shopify:\/\/shop_images\/home-bags2.jpg",
             "link": "shopify:\/\/collections\/bags"
           }
+        },
+        "256982b9-4c68-4628-a00e-c3f1d6aec9ec": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-bagsv2.jpg",
+            "link": "shopify:\/\/collections\/gifts"
+          }
         }
       },
       "block_order": [
@@ -145,7 +152,8 @@
         "567bbf1b-6e29-40e2-91f1-c14dd0367b3d",
         "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306",
         "38f83d16-7bb5-4ec6-a9b0-700bc531388c",
-        "966a29f6-1841-4168-9a74-9485bcf008af"
+        "966a29f6-1841-4168-9a74-9485bcf008af",
+        "256982b9-4c68-4628-a00e-c3f1d6aec9ec"
       ],
       "settings": {
         "grid_mobile_items_per_row": 2,
