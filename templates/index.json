@@ -11,6 +11,7 @@
       "blocks": {
         "slide-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/6-hero-desktop.jpg",
             "mobile_image": "shopify:\/\/shop_images\/green-mobile-zoomed.jpg",
@@ -23,10 +24,26 @@
             "button_2_text": "",
             "button_2_link": ""
           }
+        },
+        "c462f606-27e6-4813-b2a0-5dba5048a43b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/berrypink1800x1000.png",
+            "mobile_image": "shopify:\/\/shop_images\/Homepage_Hero_1100_x_750_px.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "SHOP CHAINS",
+            "button_1_link": "shopify:\/\/collections\/sneaker-chains",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
         }
       },
       "block_order": [
-        "slide-0"
+        "slide-0",
+        "c462f606-27e6-4813-b2a0-5dba5048a43b"
       ],
       "settings": {
         "show_fullscreen": false,
