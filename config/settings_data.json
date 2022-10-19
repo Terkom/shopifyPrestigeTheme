@@ -136,7 +136,7 @@
             "type": "text",
             "settings": {
               "title": "Need help? Let's chat.",
-              "content": "<p>info@mylacecharms.com<\/p><p>We're in Monday–Friday 9:30am - to 5:30pm PST.<\/p>",
+              "content": "<p><a href=\"mailto:info@lacecharms.com\" title=\"mailto:info@lacecharms.com\">info@lacecharms.com<\/a><\/p><p>We're in Monday–Friday 9:30am - to 5:30pm PST.<\/p>",
               "show_social_media": true
             }
           }
