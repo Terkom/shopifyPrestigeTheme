@@ -85,7 +85,8 @@
           "3c70167e-afc0-407b-afe6-f2e5e9943417": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "1",
+              "navigation_mega_menu": "Menu",
+              "push_1_image": "shopify:\/\/shop_images\/010.jpg",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
