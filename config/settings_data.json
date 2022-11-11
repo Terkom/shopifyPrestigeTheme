@@ -62,9 +62,9 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "",
+          "primary_menu": "main-menu",
           "secondary_menu": "",
-          "collapsible_menu": false,
+          "collapsible_menu": true,
           "show_social_media": true
         }
       },
