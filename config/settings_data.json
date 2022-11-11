@@ -62,8 +62,8 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "nested-nav-menu",
-          "secondary_menu": "sub-menu",
+          "primary_menu": "",
+          "secondary_menu": "",
           "collapsible_menu": false,
           "show_social_media": true
         }
@@ -85,7 +85,7 @@
           "3c70167e-afc0-407b-afe6-f2e5e9943417": {
             "type": "mega_menu",
             "settings": {
-              "navigation_mega_menu": "",
+              "navigation_mega_menu": "1",
               "push_1_heading": "Example heading",
               "push_1_subheading": "Example sub-heading",
               "push_1_url": "",
@@ -100,19 +100,18 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/heart-lacecharms_200w_26d76544-84a7-43ea-98c6-ec1fb8c8b723.png",
+          "logo": "shopify:\/\/shop_images\/riverside_logos_black.png",
           "logo_max_width": 135,
           "mobile_logo_max_width": 135,
           "show_country_selector": false,
-          "show_locale_selector": true,
-          "navigation_menu": "nested-nav-menu",
+          "show_locale_selector": false,
+          "navigation_menu": "",
           "navigation_style": "center",
           "show_icons": false,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
           "show_transparent_header_border": true,
-          "transparent_text_color": "#ffffff",
-          "transparent_logo": "shopify:\/\/shop_images\/heart-lacecharms_200w_26d76544-84a7-43ea-98c6-ec1fb8c8b723.png"
+          "transparent_text_color": "#ffffff"
         }
       },
       "footer": {
@@ -168,87 +167,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "4697538150380142411": {
-        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/reviews-popup\/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "layout": "horizontal",
-          "effect": "slidetop",
-          "delay_seconds": 3,
-          "show_seconds": 10,
-          "pause_seconds": 10,
-          "position": "bottomleft",
-          "color_background": "",
-          "color_star": "",
-          "color_text": "",
-          "review_ids": "",
-          "product_ids": "",
-          "category": "",
-          "product_brand": "",
-          "tags": "",
-          "min_rating": "none",
-          "fill_empty": false,
-          "random": false,
-          "with_photos": false
-        }
-      },
-      "1575957009345749421": {
-        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/side-drawer\/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "show_avatar": true,
-          "position": "left",
-          "text": "",
-          "title": "",
-          "link": "",
-          "link_text": "",
-          "background_color": "",
-          "style_color_button_text": "",
-          "style_color_star": "",
-          "style_color_text": "",
-          "style_color_link": "",
-          "review_ids": "",
-          "product_ids": "",
-          "category": "",
-          "product_brand": "",
-          "tags": "",
-          "min_rating": "none",
-          "fill_empty": false,
-          "random": false,
-          "with_photos": false
-        }
-      },
-      "7612553728132747764": {
-        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/net-promoter-score-form-modal\/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": true,
-        "settings": {
-          "email": "",
-          "name": "",
-          "title": "",
-          "message": "Enable advanced features and increase your monthly order limit to match your business's needs.",
-          "reason": "",
-          "thank_you": "",
-          "label_name": "",
-          "label_email": ""
-        }
-      },
-      "6770146895900431855": {
-        "type": "shopify:\/\/apps\/delivery\/blocks\/app-embed\/83d8bfd8-d404-4f9a-ae93-22363b03f58b",
-        "disabled": false,
-        "settings": {
-          "top-border": true,
-          "bottom-border": false
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Allure": {
