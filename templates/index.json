@@ -13,6 +13,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/121.jpg",
             "apply_overlay": false,
             "content_position": "bottomRight",
             "subheading": "",
@@ -26,6 +27,7 @@
         "c462f606-27e6-4813-b2a0-5dba5048a43b": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/114.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
