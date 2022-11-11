@@ -3,7 +3,7 @@
     "1660609488ff03f2a5": {
       "type": "mobile-extra-nav",
       "settings": {
-        "extra_nav_menu": "extra-mobile-nav-menu"
+        "extra_nav_menu": ""
       }
     },
     "slideshow": {
@@ -13,8 +13,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/6-hero-desktop.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/green-mobile-zoomed.jpg",
             "apply_overlay": false,
             "content_position": "bottomRight",
             "subheading": "",
@@ -28,8 +26,6 @@
         "c462f606-27e6-4813-b2a0-5dba5048a43b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/berrypink1800x1000.png",
-            "mobile_image": "shopify:\/\/shop_images\/Homepage_Hero_1100_x_750_px.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -69,21 +65,18 @@
         "1657735884faeda64e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/reviews-2.png",
             "link": "shopify:\/\/pages\/reviews"
           }
         },
         "e2adfe6c-7cea-42e7-a745-f2538a7a16de": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LA_Est_2018_copy.png",
             "link": ""
           }
         },
         "47f858c0-0081-4ae0-b558-624646b8b6f5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-1_347781b6-371a-4d06-95a1-e4428861a656.png",
             "link": ""
           }
         }
@@ -116,49 +109,42 @@
         "1657750007e493dded-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-charms-canva.jpg",
             "link": "shopify:\/\/collections\/everything"
           }
         },
         "c9d02785-d0d3-4345-a8f1-507451d7e397": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-chains-canva.jpg",
             "link": "shopify:\/\/collections\/sneaker-chains"
           }
         },
         "567bbf1b-6e29-40e2-91f1-c14dd0367b3d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-tips-canva.jpg",
             "link": "shopify:\/\/collections\/lacetips"
           }
         },
         "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-laces-canva.jpg",
             "link": "shopify:\/\/collections\/shoelaces"
           }
         },
         "38f83d16-7bb5-4ec6-a9b0-700bc531388c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-sgc.jpg",
             "link": "shopify:\/\/collections\/sunglasses-chains"
           }
         },
         "966a29f6-1841-4168-9a74-9485bcf008af": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-bags2.jpg",
             "link": "shopify:\/\/collections\/bags"
           }
         },
         "256982b9-4c68-4628-a00e-c3f1d6aec9ec": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home-bagsv2.jpg",
             "link": "shopify:\/\/collections\/gifts"
           }
         }
@@ -187,7 +173,6 @@
         "165776627745435374-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snkrhead_74ce0501-fd71-45e5-9a57-9abe802c7f22.jpg",
             "link": ""
           }
         }
@@ -228,7 +213,7 @@
         "show_vendor": false,
         "show_color_swatch": false,
         "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
+        "grid_desktop_items_per_row": 3
       }
     },
     "16577748627471cce1": {
