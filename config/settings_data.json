@@ -107,7 +107,7 @@
           "show_country_selector": false,
           "show_locale_selector": false,
           "navigation_menu": "",
-          "navigation_style": "center",
+          "navigation_style": "sidebar",
           "show_icons": false,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
