@@ -109,7 +109,7 @@
           "navigation_menu": "",
           "navigation_style": "sidebar",
           "show_icons": false,
-          "enable_transparent_header": false,
+          "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
           "show_transparent_header_border": true,
           "transparent_text_color": "#ffffff"
