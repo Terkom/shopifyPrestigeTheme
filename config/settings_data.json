@@ -102,7 +102,7 @@
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/riverside_logos_black.png",
-          "logo_max_width": 135,
+          "logo_max_width": 200,
           "mobile_logo_max_width": 135,
           "show_country_selector": false,
           "show_locale_selector": false,
