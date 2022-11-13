@@ -11,14 +11,13 @@
       "blocks": {
         "slide-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/121.jpg",
             "apply_overlay": false,
-            "content_position": "bottomRight",
+            "content_position": "middleCenter",
             "subheading": "",
             "title": "",
-            "button_1_text": "Shop Chains",
+            "button_1_text": "ПРИДБАТИ КАВУ",
             "button_1_link": "shopify:\/\/collections\/sneaker-chains",
             "button_2_text": "",
             "button_2_link": ""
@@ -51,122 +50,6 @@
         "text_color": "#ffffff",
         "button_color": "#363636",
         "button_background": "#ffffff"
-      }
-    },
-    "165828492324cd53d8": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<div style=\"text-align: center;\">\n<h1 class=\"u-h1\" style=\"font-size: 30px; line-height: 1.15;\">Elevated sneaker accessories.<\/h1>\n<\/div>"
-      }
-    },
-    "1657735884bb277b04": {
-      "type": "image-grid",
-      "blocks": {
-        "1657735884faeda64e-0": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/pages\/reviews"
-          }
-        },
-        "e2adfe6c-7cea-42e7-a745-f2538a7a16de": {
-          "type": "image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "47f858c0-0081-4ae0-b558-624646b8b6f5": {
-          "type": "image",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1657735884faeda64e-0",
-        "e2adfe6c-7cea-42e7-a745-f2538a7a16de",
-        "47f858c0-0081-4ae0-b558-624646b8b6f5"
-      ],
-      "settings": {
-        "grid_mobile_items_per_row": 3,
-        "grid_desktop_items_per_row": 3,
-        "grid_margin": true,
-        "max_width": 60,
-        "button_text": "Shop Now",
-        "button_link": ""
-      }
-    },
-    "1658287277c075fca6": {
-      "type": "highlight-review",
-      "settings": {
-        "link": "https:\/\/www.mylacecharms.com\/pages\/reviews?utm-link=home-review",
-        "review": "My Lace Charms are awesome and I love them on my Jordan 1's",
-        "name": "Angela B."
-      }
-    },
-    "165775000702c0a96f": {
-      "type": "image-grid",
-      "blocks": {
-        "1657750007e493dded-0": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/everything"
-          }
-        },
-        "c9d02785-d0d3-4345-a8f1-507451d7e397": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/sneaker-chains"
-          }
-        },
-        "567bbf1b-6e29-40e2-91f1-c14dd0367b3d": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/lacetips"
-          }
-        },
-        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/shoelaces"
-          }
-        },
-        "38f83d16-7bb5-4ec6-a9b0-700bc531388c": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/sunglasses-chains"
-          }
-        },
-        "966a29f6-1841-4168-9a74-9485bcf008af": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/bags"
-          }
-        },
-        "256982b9-4c68-4628-a00e-c3f1d6aec9ec": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/gifts"
-          }
-        }
-      },
-      "block_order": [
-        "1657750007e493dded-0",
-        "c9d02785-d0d3-4345-a8f1-507451d7e397",
-        "567bbf1b-6e29-40e2-91f1-c14dd0367b3d",
-        "d4f7e055-cb53-4cf0-9d4f-44cd1d43f306",
-        "38f83d16-7bb5-4ec6-a9b0-700bc531388c",
-        "966a29f6-1841-4168-9a74-9485bcf008af",
-        "256982b9-4c68-4628-a00e-c3f1d6aec9ec"
-      ],
-      "settings": {
-        "grid_mobile_items_per_row": 2,
-        "grid_desktop_items_per_row": 4,
-        "grid_margin": true,
-        "max_width": 100,
-        "button_text": "SHOP NOW",
-        "button_link": "shopify:\/\/collections\/everything"
       }
     },
     "165776627709b745ac": {
@@ -234,10 +117,6 @@
   "order": [
     "1660609488ff03f2a5",
     "slideshow",
-    "165828492324cd53d8",
-    "1657735884bb277b04",
-    "1658287277c075fca6",
-    "165775000702c0a96f",
     "165776627709b745ac",
     "featured-collections",
     "16577748627471cce1"
