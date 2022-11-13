@@ -20,8 +20,8 @@
         "c462f606-27e6-4813-b2a0-5dba5048a43b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/114.jpg",
-            "apply_overlay": false,
+            "image": "shopify:\/\/shop_images\/036.jpg",
+            "apply_overlay": true,
             "content_position": "middleCenter",
             "subheading": "",
             "title": "",
