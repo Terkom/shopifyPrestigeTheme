@@ -3,7 +3,7 @@
     "1660609488ff03f2a5": {
       "type": "mobile-extra-nav",
       "settings": {
-        "extra_nav_menu": ""
+        "extra_nav_menu": "main-menu"
       }
     },
     "slideshow": {
@@ -43,7 +43,7 @@
         "c462f606-27e6-4813-b2a0-5dba5048a43b"
       ],
       "settings": {
-        "show_fullscreen": true,
+        "show_fullscreen": false,
         "show_arrow": false,
         "autoplay": false,
         "cycle_speed": 6,
