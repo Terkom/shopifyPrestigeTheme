@@ -1,11 +1,5 @@
 {
   "sections": {
-    "1660609488ff03f2a5": {
-      "type": "mobile-extra-nav",
-      "settings": {
-        "extra_nav_menu": "main-menu"
-      }
-    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -13,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/121.jpg",
-            "apply_overlay": false,
+            "apply_overlay": true,
             "content_position": "middleCenter",
             "subheading": "",
             "title": "",
@@ -115,7 +109,6 @@
     }
   },
   "order": [
-    "1660609488ff03f2a5",
     "slideshow",
     "165776627709b745ac",
     "featured-collections",

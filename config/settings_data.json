@@ -100,7 +100,7 @@
           "3c70167e-afc0-407b-afe6-f2e5e9943417"
         ],
         "settings": {
-          "use_sticky_header": false,
+          "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/riverside_logos_black.png",
           "logo_max_width": 135,
           "mobile_logo_max_width": 135,
