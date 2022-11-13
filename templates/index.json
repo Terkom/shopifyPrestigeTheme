@@ -28,7 +28,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/114.jpg",
             "apply_overlay": false,
-            "content_position": "bottomLeft",
+            "content_position": "middleCenter",
             "subheading": "",
             "title": "",
             "button_1_text": "SHOP CHAINS",
@@ -43,10 +43,10 @@
         "c462f606-27e6-4813-b2a0-5dba5048a43b"
       ],
       "settings": {
-        "show_fullscreen": false,
+        "show_fullscreen": true,
         "show_arrow": false,
         "autoplay": false,
-        "cycle_speed": 5,
+        "cycle_speed": 6,
         "text_color": "#ffffff",
         "button_color": "#363636",
         "button_background": "#ffffff"
